@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
+
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>FrontEndBook - ShawnPhang</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
+<style>
+  .juejin {
+    height: .95rem;
+  }
+</style>
+
 <body>
+  <nav>
+    <a href="http://blog.palxp.com">进入博客</a>
+    <a href="https://juejin.cn/user/2682464103060541/posts"><img class="juejin"
+        src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/dcec27cc6ece0eb5bb217e62e6bec104.svg" /></a>
+  </nav>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: ''
+      name: 'FrontEnd Book',
+      repo: 'palxiao/FEbook',
+      loadNavbar: true,
+      loadSidebar: true,
+      subMaxLevel: 2, // 显示目录
+      plugins: [
+        EditOnGithubPlugin.create('https://github.com/palxiao/FEbook/tree/main/docs', '', '在Github上编辑')
+      ],
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
 </body>
+
 </html>
