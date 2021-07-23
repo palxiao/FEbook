@@ -6,4 +6,14 @@
 -->
 
 * 插件工具
-    * [VScode相关](vscode/vscode-plugins.md)
+    * [VScode相关](articles/vscode/vscode-plugins.md)
+
+* 效率工具
+    * [项目模板脚手架](articles/plugins/tsn-cli.md)
+    * [快速规范校验代码美化](articles/plugins/norm.md)
+
+* 基础建设
+    * [私有npm包管理](articles/base/npm.md)
+
+* 实验室
+    * [Git自动化操作](articles/plugins/gp-cli.md)
