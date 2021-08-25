@@ -3,7 +3,7 @@
  * @LastEditors: ShawnPhang
  * @Description: 
  * @Date: 2021-07-23 11:40:27
- * @LastEditTime: 2021-07-23 14:06:55
+ * @LastEditTime: 2021-08-25 20:55:06
  * @site: book.palxp.com / blog.palxp.com
 -->
 
@@ -32,6 +32,18 @@ nrm add name http//:xxx.xxx.xxx.xxx:4873/
 删除源
 ```
 nrm del name
+```
+使用指定源
+```
+nrm use npm
+```
+登录
+```
+npm addUser
+```
+发布包
+```
+npm publish
 ```
 
 ### 鉴权管理
