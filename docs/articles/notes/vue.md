@@ -3,9 +3,33 @@
  * @LastEditors: ShawnPhang
  * @Description: 
  * @Date: 2021-07-26 15:09:45
- * @LastEditTime: 2021-07-27 10:15:38
+ * @LastEditTime: 2021-08-30 17:21:09
  * @site: book.palxp.com / blog.palxp.com
 -->
+
+## Vue 小知识
+
+### 深度选择器
+
+深度选择器最早是使用`>>>`来标识的，后来发现某些CSS预处理程序（例如SASS）在解析它时会遇到问题，因为这不是官方的CSS组合器，后来变成了`/deep/` 和 伪元素语法的 `::v-deep`，这两种方式在Vue2中任然生效，但是在Vue3中这种方式将会警告（the >>> and /deep/ combinators have been deprecated. Use :deep() instead.），需要改成这种方式`:deep()`。
+```js
+// 以下将废弃
+<style scoped>
+/deep/ .main{
+    background: #df2929;
+}
+>>> .main{
+    background: #df2929;
+}
+</style>
+
+// 正确写法
+<style scoped>
+:deep(.main){
+    background: #df2929;
+}
+</style>
+```
 
 ## Vue 3 升级相关
 
