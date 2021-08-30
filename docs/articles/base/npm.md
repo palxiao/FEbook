@@ -3,7 +3,7 @@
  * @LastEditors: ShawnPhang
  * @Description: 
  * @Date: 2021-07-23 11:40:27
- * @LastEditTime: 2021-08-30 15:23:44
+ * @LastEditTime: 2021-08-30 15:26:06
  * @site: book.palxp.com / blog.palxp.com
 -->
 
@@ -50,4 +50,4 @@ npm publish
 
 [配置项文档](https://verdaccio.org/docs/en/configuration)
 
-![](/images/plugins/2021-08-30-3.22.03.png)
+![](../../images/plugins/2021-08-30-3.22.03.png)
