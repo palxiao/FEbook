@@ -3,7 +3,7 @@
  * @LastEditors: ShawnPhang
  * @Description: 
  * @Date: 2021-07-26 15:09:45
- * @LastEditTime: 2021-08-30 17:21:09
+ * @LastEditTime: 2021-09-01 10:29:49
  * @site: book.palxp.com / blog.palxp.com
 -->
 
@@ -16,17 +16,17 @@
 // 以下将废弃
 <style scoped>
 /deep/ .main{
-    background: #df2929;
+    background: #fff;
 }
 >>> .main{
-    background: #df2929;
+    background: #fff;
 }
 </style>
 
 // 正确写法
 <style scoped>
 :deep(.main){
-    background: #df2929;
+    background: #fff;
 }
 </style>
 ```
