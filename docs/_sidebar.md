@@ -1,6 +1,14 @@
+<!--
+ * @Author: ShawnPhang
+ * @Date: 2021-07-22 11:09:52
+ * @Description: 
+ * @LastEditors: ShawnPhang
+ * @LastEditTime: 2021-09-03 18:06:34
+ * @site: book.palxp.com / blog.palxp.com
+-->
 
 * 前端笔记
-    * [Vue](articles/notes&record/vue.md)
+    * [Vue](articles/notes-record/vue.md)
 
 * 插件/效率工具
     * [VScode相关](articles/vscode/vscode-plugins.md)
