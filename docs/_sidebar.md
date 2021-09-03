@@ -1,9 +1,3 @@
-<!--
- * @Author: ShawnPhang
- * @LastEditors: ShawnPhang
- * @Description: 
- * blog.palxp.com/book.palxp.com
--->
 
 * 前端笔记
     * [Vue](articles/notes&record/vue.md)
