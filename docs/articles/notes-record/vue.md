@@ -3,7 +3,7 @@
  * @LastEditors: ShawnPhang
  * @Description: 
  * @Date: 2021-07-26 15:09:45
- * @LastEditTime: 2021-09-01 10:29:49
+ * @LastEditTime: 2021-09-29 18:26:05
  * @site: book.palxp.com / blog.palxp.com
 -->
 
@@ -79,6 +79,7 @@ export default defineComponent({
   },
 });
 ```
+[参考文章](https://qiita.com/jay-es/items/6d0279737fb510b0aa6c)
 
 ### 生命周期对比
 
