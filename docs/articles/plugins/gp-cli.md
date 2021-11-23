@@ -3,7 +3,7 @@
  * @LastEditors: ShawnPhang
  * @Description: 
  * @Date: 2021-07-22 16:48:12
- * @LastEditTime: 2021-11-23 16:51:13
+ * @LastEditTime: 2021-11-23 21:12:50
  * @site: book.palxp.com / blog.palxp.com
 -->
 
@@ -12,8 +12,9 @@
 一个便捷提交部署代码的脚手架工具，意为 Git Performer (GIT 执行者)。
 
 目前beta阶段，未发布。
-[ ] bugs: 缺少冲突监测逻辑
-[ ] feat: 判断任务执行风险(选择了不是当前分支的任务)
+
+[x] bugs: 缺少冲突监测逻辑
+[x] feat: 判断任务执行风险(选择了不是当前分支的任务)
 [x] feat: 未提交代码时不继续进行操作
 
 以任务模式驱动，可在项目下创建发布任务，然后通过选择不同的发布任务来自动执行git合并部署等提交，并且自动打开PR链接(目前仅支持Github和Gitlab)，使得不同项目或分支的提交操作变得简单明了。
