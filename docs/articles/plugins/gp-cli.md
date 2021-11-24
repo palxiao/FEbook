@@ -3,7 +3,7 @@
  * @LastEditors: ShawnPhang
  * @Description: 
  * @Date: 2021-07-22 16:48:12
- * @LastEditTime: 2021-11-23 21:20:46
+ * @LastEditTime: 2021-11-24 09:17:44
  * @site: book.palxp.com / blog.palxp.com
 -->
 
@@ -15,7 +15,7 @@
 
 目前beta阶段，暂未发布。
 
-- [x] bugs: 缺少冲突监测逻辑
+- [x] feat: 缺少冲突监测逻辑(需支持任务重启)
 - [x] feat: 判断任务执行风险(选择了不是当前分支的任务)
 - [x] feat: 未提交代码时不继续进行操作
 
