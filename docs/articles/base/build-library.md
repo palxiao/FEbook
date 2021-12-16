@@ -3,7 +3,7 @@
  * @Date: 2021-09-02 10:44:23
  * @Description: 前端组件库搭建
  * @LastEditors: ShawnPhang
- * @LastEditTime: 2021-09-17 21:50:12
+ * @LastEditTime: 2021-12-16 14:46:11
  * @site: book.palxp.com / blog.palxp.com
 -->
 
@@ -77,6 +77,7 @@ build操作交互功能，提供多选列表，可选统一打包(组件库)或�
 打包：rollup
 
 文档工具：jsdoc typeDoc、vscode代码片段辅助
+调用组件时的代码提示（jsdoc/d.ts + vscode驱动）
 
 ## vite 按需加载示例
 
