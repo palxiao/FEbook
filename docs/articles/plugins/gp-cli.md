@@ -3,7 +3,7 @@
  * @LastEditors: ShawnPhang
  * @Description: 
  * @Date: 2021-07-22 16:48:12
- * @LastEditTime: 2021-12-02 17:25:43
+ * @LastEditTime: 2021-12-09 14:53:22
  * @site: book.palxp.com / blog.palxp.com
 -->
 
@@ -15,8 +15,8 @@
 
 beta阶段，暂无发布。
 
-- [x] feat: 冲突监测逻辑(需支持任务重启)
-- [x] feat: 判断任务执行风险(如果选择了不是当前分支的任务)
+- [x] feat: 冲突监测逻辑(支持任务重启)
+- [x] feat: 判断任务执行风险(如果选择了不是当前分支的任务)，阻止并协助跳转
 - [x] feat: 未提交代码时不进行操作
 
 ### 使用示例

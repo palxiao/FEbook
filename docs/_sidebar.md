@@ -1,17 +1,18 @@
 <!--
  * @Author: ShawnPhang
  * @Date: 2021-07-22 11:09:52
- * @Description: 
+ * @Description: 目录文件
  * @LastEditors: ShawnPhang
- * @LastEditTime: 2021-09-03 18:06:34
+ * @LastEditTime: 2021-12-16 10:39:51
  * @site: book.palxp.com / blog.palxp.com
 -->
 
 * 前端笔记
     * [Vue](articles/notes-record/vue.md)
+    * [12.17技术分享.md](articles/notes-record/12.17技术分享.md)
 
 * 插件/效率工具
-    * [VScode相关](articles/vscode/vscode-plugins.md)
+    * [VScode相关](articles/plugins/vscode/vscode-plugins.md)
     * [项目模板脚手架](articles/plugins/tsn-cli.md)
 
 * 基础建设
