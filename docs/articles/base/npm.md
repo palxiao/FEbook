@@ -3,7 +3,7 @@
  * @LastEditors: ShawnPhang
  * @Description: 
  * @Date: 2021-07-23 11:40:27
- * @LastEditTime: 2021-12-20 14:47:23
+ * @LastEditTime: 2021-12-20 15:02:46
  * @site: book.palxp.com / blog.palxp.com
 -->
 
@@ -15,9 +15,8 @@ docker run -d --rm --name verdaccio -p 4873:4873 verdaccio/verdaccio
 ```
 看到启动成功，桥接的4873端口，记得设置网关安全组或防火墙。
 
-### 如何发布
+### 管理npm源
 
-安装npm源管理
 ```
 npm i nrm -g
 ```
@@ -37,6 +36,9 @@ nrm del name
 ```
 nrm use npm
 ```
+
+### 如何发布
+
 登录
 ```
 npm addUser
@@ -45,6 +47,12 @@ npm addUser
 ```
 npm publish
 ```
+
+### 如何删除包
+
+注：发布24小时内的包才可以删除
+
+`npm unpublish xxx --force`
 
 ### 私有域包管理
 可以使用`npm config`以下方式将作用域与注册表关联：
