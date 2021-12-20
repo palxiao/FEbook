@@ -3,7 +3,7 @@
  * @LastEditors: ShawnPhang
  * @Description: 
  * @Date: 2021-07-23 11:40:27
- * @LastEditTime: 2021-08-30 15:28:41
+ * @LastEditTime: 2021-12-20 14:47:23
  * @site: book.palxp.com / blog.palxp.com
 -->
 
@@ -45,6 +45,13 @@ npm addUser
 ```
 npm publish
 ```
+
+### 私有域包管理
+可以使用`npm config`以下方式将作用域与注册表关联：
+
+`npm config set @myco:registry http://reg.example.com`
+
+这表示将范围与注册表关联后，npm install具有该范围的软件包的任何内容都将向该注册表请求软件包。任何 npm publish一个包含范围包名称将被发布到注册表来代替。
 
 ### 鉴权管理
 
