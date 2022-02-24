@@ -5,6 +5,21 @@
  * blog.palxp.com/book.palxp.com
 -->
 
+## vscode 文件差异比较
+
+先配置：
+
+```
+git config --global diff.tool vscode
+git config --global difftool.vscode.cmd 'code --wait --diff $LOCAL $REMOTE'
+```
+
+然后运行
+```
+git difftool
+```
+即可进行文件比较，非常方便找出未提交代码的改动
+
 ## koroFileHeader 注释生成插件
 
 文件头部注释：
