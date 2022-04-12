@@ -32,3 +32,16 @@ git difftool
 函数注释在文件的任意位置都可生成，这里需要自己控制。
 
 [配置字段](https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE%E5%AD%97%E6%AE%B5)
+
+eg:
+
+```
+  "fileheader.customMade": {
+    "Author": "ShawnPhang",
+    "Date": "Do not edit", // 设置后默认设置文件生成时间
+    "Description": " ",
+    "LastEditors": "ShawnPhang", // 设置后，保存文件更改默认更新最后编辑人
+    "LastEditTime": "Do not edit", // 设置后，保存文件更改默认更新最后编辑时间
+    "custom_string_obkoro1": "@site: book.palxp.com"
+  },
+```
