@@ -3,7 +3,7 @@
  * @LastEditors: ShawnPhang
  * @Description: 
  * @Date: 2021-07-26 15:09:45
- * @LastEditTime: 2021-09-29 18:26:05
+ * @LastEditTime: 2022-04-14 14:33:27
  * @site: book.palxp.com / blog.palxp.com
 -->
 
@@ -102,3 +102,6 @@ prop：value -> modelValue
 event：input -> update:modelValue
 ```
 
+### 引入图片地址的方法
+
+在vue2中一般使用`require('@/assets/xxx.png')`来引用图片，在vue3中由于配套工具不支持require，故可以用`await import('@/assets/xxx.png)`来引用图片或资源。
