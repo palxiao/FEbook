@@ -7,9 +7,9 @@
 
 # Front End Book
 
-this is my Front-end universe.
+做前端不难，做好前端不易。
 
-用来作记录的笔记，基于docsify驱动，部署在GithubPages。
+用来作记录的笔记，基于Docsify驱动，部署在GithubPages。
 
 本地启动: 
 ```sh
