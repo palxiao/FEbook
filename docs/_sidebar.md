@@ -3,13 +3,13 @@
  * @Date: 2021-07-22 11:09:52
  * @Description: 目录文件
  * @LastEditors: ShawnPhang
- * @LastEditTime: 2022-04-22 15:21:12
+ * @LastEditTime: 2022-05-13 14:19:33
  * @site: book.palxp.com / blog.palxp.com
 -->
 
 * 前端笔记
     * [Vue](articles/notes-record/vue.md)
-    * [前端实用类库](articles/notes-record/实用类库.md)
+    * [前端实用类库整理记录](articles/notes-record/实用类库.md)
     * [前端实用技巧记录](articles/notes-record/实用技巧.md)
     * [公司技术分享.md](articles/notes-record/技术分享.md)
 
