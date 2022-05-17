@@ -11,7 +11,10 @@
 
 这里是不会烂笔头的前端笔记。基于Docsify驱动，部署在GithubPages。
 
-本地启动: 
 ```sh
+本地启动: 
+
 docsify serve docs
 ```
+
+滴水难把石穿透，滋润大地又何妨。
