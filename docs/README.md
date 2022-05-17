@@ -7,9 +7,9 @@
 
 # Front End Book
 
-做前端不难，做好前端不易。
+做前端不难，做好前端不易。这里是不会烂笔头的前端笔记。
 
-这里是不会烂笔头的前端笔记。基于Docsify驱动，部署在GithubPages。
+基于Docsify驱动，部署在GithubPages。
 
 ```sh
 本地启动: 
