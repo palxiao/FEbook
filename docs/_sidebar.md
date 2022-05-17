@@ -3,7 +3,7 @@
  * @Date: 2021-07-22 11:09:52
  * @Description: 目录文件
  * @LastEditors: ShawnPhang
- * @LastEditTime: 2022-05-17 11:15:10
+ * @LastEditTime: 2022-05-17 11:20:27
  * @site: book.palxp.com / blog.palxp.com
 -->
 
@@ -12,7 +12,7 @@
     * [前端实用类库整理记录](articles/notes-record/实用类库.md)
     * [前端实用技巧记录](articles/notes-record/实用技巧.md)
     * [公司技术分享.md](articles/notes-record/技术分享.md)
-    * [微前端.md](articles/notes-record/微前端.md)
+    * [微前端，巨石应用优化.md](articles/notes-record/微前端.md)
 
 * 插件/效率工具
     * [VScode相关](articles/plugins/vscode/vscode-plugins.md)
