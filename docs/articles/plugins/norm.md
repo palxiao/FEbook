@@ -3,7 +3,7 @@
  * @LastEditors: ShawnPhang
  * @Description: 
  * @Date: 2021-07-22 17:50:16
- * @LastEditTime: 2021-07-26 17:12:04
+ * @LastEditTime: 2022-07-28 21:50:45
  * @site: book.palxp.com / blog.palxp.com
 -->
 
@@ -31,4 +31,4 @@ vue add vue-cli-plugin-norm
 
 提交功能预览: 
 
-![](../../images/norm/c.png)
+![](images/norm/c.png)
