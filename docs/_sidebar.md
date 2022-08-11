@@ -1,7 +1,7 @@
 * 前端笔记
     * [Vue](articles/notes-record/vue.md)
-    * 前端实用类库整理记录
-    * 前端实用技巧记录
+    * [前端实用类库整理记录](articles/notes-record/实用类库.md)
+    * [前端实用技巧记录](articles/notes-record/实用技巧.md)
     * 公司技术分享记录.md
     * 微前端与巨石应用.md
 * 插件/效率工具
