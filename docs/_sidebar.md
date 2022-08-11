@@ -1,11 +1,3 @@
-<!--
- * @Author: ShawnPhang
- * @Date: 2022-08-11 11:16:25
- * @Description:  
- * @LastEditors: ShawnPhang
- * @LastEditTime: 2022-08-11 11:19:35
- * @site: book.palxp.com
--->
 * 前端笔记
     * [Vue](articles/vue.md)
     * [前端实用类库整理记录](articles/实用类库.md)
