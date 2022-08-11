@@ -24,12 +24,14 @@
       {
         "id": "NutBEryMfk2OqvriHKw4w",
         "label": "公司技术分享记录.md",
-        "children": []
+        "children": [],
+        "link": "articles/notes-record/技术分享.md"
       },
       {
         "id": "_Xc7u7VREsDRTXjDOJwzM",
         "label": "微前端与巨石应用.md",
-        "children": []
+        "children": [],
+        "link": "articles/notes-record/微前端.md"
       }
     ]
   },
@@ -40,12 +42,14 @@
       {
         "id": "vhCXpdGMalJ4Uq0uw4iwo",
         "label": "VScode相关",
-        "children": []
+        "children": [],
+        "link": "articles/plugins/vscode/vscode-plugins.md"
       },
       {
         "id": "wsyqX2_hzdT07YoAZCTeb",
         "label": "项目模板脚手架",
-        "children": []
+        "children": [],
+        "link": "articles/plugins/tsn-cli.md"
       }
     ]
   },
@@ -56,17 +60,20 @@
       {
         "id": "IIqOtmL-dkKSZHfPHDX48",
         "label": "前端组件库搭建、工具库搭建",
-        "children": []
+        "children": [],
+        "link": "articles/base/build-library.md"
       },
       {
         "id": "djbO_0vycufQO6z7zAoNK",
         "label": "建设私有npm包管理",
-        "children": []
+        "children": [],
+        "link": "articles/base/npm.md"
       },
       {
         "id": "w881I-Op5LUAQQVqL_7K4",
         "label": "快速建立代码规范及美化",
-        "children": []
+        "children": [],
+        "link": "articles/plugins/norm.md"
       }
     ]
   },
@@ -77,7 +84,8 @@
       {
         "id": "H3ZBf97Yk6SvZaO8YHF2G",
         "label": "工具 - GitPush自动化",
-        "children": []
+        "children": [],
+        "link": "articles/plugins/gp-cli.md"
       }
     ]
   }

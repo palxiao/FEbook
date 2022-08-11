@@ -2,14 +2,14 @@
     * [Vue](articles/notes-record/vue.md)
     * [前端实用类库整理记录](articles/notes-record/实用类库.md)
     * [前端实用技巧记录](articles/notes-record/实用技巧.md)
-    * 公司技术分享记录.md
-    * 微前端与巨石应用.md
+    * [公司技术分享记录.md](articles/notes-record/技术分享.md)
+    * [微前端与巨石应用.md](articles/notes-record/微前端.md)
 * 插件/效率工具
-    * VScode相关
-    * 项目模板脚手架
+    * [VScode相关](articles/plugins/vscode/vscode-plugins.md)
+    * [项目模板脚手架](articles/plugins/tsn-cli.md)
 * 基础建设
-    * 前端组件库搭建、工具库搭建
-    * 建设私有npm包管理
-    * 快速建立代码规范及美化
+    * [前端组件库搭建、工具库搭建](articles/base/build-library.md)
+    * [建设私有npm包管理](articles/base/npm.md)
+    * [快速建立代码规范及美化](articles/plugins/norm.md)
 * 实验室
-    * 工具 - GitPush自动化
+    * [工具 - GitPush自动化](articles/plugins/gp-cli.md)
