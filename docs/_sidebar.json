@@ -1,81 +1,82 @@
 [
-    {
-      "id": "oFXEuFIlu4UGaRvtqUKbZ",
-      "label": "前端笔记",
-      "children": [
-        {
-          "id": "G41fpzMg8IzK22PPyvg0M",
-          "label": "Vue",
-          "children": []
-        },
-        {
-          "id": "HBzr6Dh-KJK5x-9T8H8bK",
-          "label": "前端实用类库整理记录",
-          "children": []
-        },
-        {
-          "id": "jm3Qm34mBeB6pgcs40imo",
-          "label": "前端实用技巧记录",
-          "children": []
-        },
-        {
-          "id": "NutBEryMfk2OqvriHKw4w",
-          "label": "公司技术分享记录.md",
-          "children": []
-        },
-        {
-          "id": "_Xc7u7VREsDRTXjDOJwzM",
-          "label": "微前端与巨石应用.md",
-          "children": []
-        }
-      ]
-    },
-    {
-      "id": "03SdG81wYctV7cT92P-Oo",
-      "label": "插件/效率工具",
-      "children": [
-        {
-          "id": "vhCXpdGMalJ4Uq0uw4iwo",
-          "label": "VScode相关",
-          "children": []
-        },
-        {
-          "id": "wsyqX2_hzdT07YoAZCTeb",
-          "label": "项目模板脚手架",
-          "children": []
-        }
-      ]
-    },
-    {
-      "id": "omFqJ6oDsojUTJ0GSoLZI",
-      "label": "基础建设",
-      "children": [
-        {
-          "id": "IIqOtmL-dkKSZHfPHDX48",
-          "label": "前端组件库搭建、工具库搭建",
-          "children": []
-        },
-        {
-          "id": "djbO_0vycufQO6z7zAoNK",
-          "label": "建设私有npm包管理",
-          "children": []
-        },
-        {
-          "id": "w881I-Op5LUAQQVqL_7K4",
-          "label": "快速建立代码规范及美化",
-          "children": []
-        }
-      ]
-    },
-    {
-      "id": "bugYrCAjYkraAFjyb2UYl",
-      "label": "实验室",
-      "children": [
-        {
-          "id": "H3ZBf97Yk6SvZaO8YHF2G",
-          "label": "工具 - GitPush自动化",
-          "children": []
-        }
-      ]
-    }
-  ]
+  {
+    "id": "oFXEuFIlu4UGaRvtqUKbZ",
+    "label": "前端笔记",
+    "children": [
+      {
+        "id": "G41fpzMg8IzK22PPyvg0M",
+        "label": "Vue",
+        "children": [],
+        "link": "articles/notes-record/vue.md"
+      },
+      {
+        "id": "HBzr6Dh-KJK5x-9T8H8bK",
+        "label": "前端实用类库整理记录",
+        "children": []
+      },
+      {
+        "id": "jm3Qm34mBeB6pgcs40imo",
+        "label": "前端实用技巧记录",
+        "children": []
+      },
+      {
+        "id": "NutBEryMfk2OqvriHKw4w",
+        "label": "公司技术分享记录.md",
+        "children": []
+      },
+      {
+        "id": "_Xc7u7VREsDRTXjDOJwzM",
+        "label": "微前端与巨石应用.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "03SdG81wYctV7cT92P-Oo",
+    "label": "插件/效率工具",
+    "children": [
+      {
+        "id": "vhCXpdGMalJ4Uq0uw4iwo",
+        "label": "VScode相关",
+        "children": []
+      },
+      {
+        "id": "wsyqX2_hzdT07YoAZCTeb",
+        "label": "项目模板脚手架",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "omFqJ6oDsojUTJ0GSoLZI",
+    "label": "基础建设",
+    "children": [
+      {
+        "id": "IIqOtmL-dkKSZHfPHDX48",
+        "label": "前端组件库搭建、工具库搭建",
+        "children": []
+      },
+      {
+        "id": "djbO_0vycufQO6z7zAoNK",
+        "label": "建设私有npm包管理",
+        "children": []
+      },
+      {
+        "id": "w881I-Op5LUAQQVqL_7K4",
+        "label": "快速建立代码规范及美化",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "bugYrCAjYkraAFjyb2UYl",
+    "label": "实验室",
+    "children": [
+      {
+        "id": "H3ZBf97Yk6SvZaO8YHF2G",
+        "label": "工具 - GitPush自动化",
+        "children": []
+      }
+    ]
+  }
+]
