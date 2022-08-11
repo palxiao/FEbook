@@ -7,31 +7,31 @@
         "id": "G41fpzMg8IzK22PPyvg0M",
         "label": "Vue",
         "children": [],
-        "link": "articles/notes-record/vue.md"
+        "link": "articles/vue.md"
       },
       {
         "id": "HBzr6Dh-KJK5x-9T8H8bK",
         "label": "前端实用类库整理记录",
         "children": [],
-        "link": "articles/notes-record/实用类库.md"
+        "link": "articles/实用类库.md"
       },
       {
         "id": "jm3Qm34mBeB6pgcs40imo",
         "label": "前端实用技巧记录",
         "children": [],
-        "link": "articles/notes-record/实用技巧.md"
+        "link": "articles/实用技巧.md"
       },
       {
         "id": "NutBEryMfk2OqvriHKw4w",
         "label": "公司技术分享记录.md",
         "children": [],
-        "link": "articles/notes-record/技术分享.md"
+        "link": "articles/技术分享.md"
       },
       {
         "id": "_Xc7u7VREsDRTXjDOJwzM",
         "label": "微前端与巨石应用.md",
         "children": [],
-        "link": "articles/notes-record/微前端.md"
+        "link": "articles/微前端.md"
       }
     ]
   },
@@ -43,13 +43,13 @@
         "id": "vhCXpdGMalJ4Uq0uw4iwo",
         "label": "VScode相关",
         "children": [],
-        "link": "articles/plugins/vscode/vscode-plugins.md"
+        "link": "articles/vscode-plugins.md"
       },
       {
         "id": "wsyqX2_hzdT07YoAZCTeb",
         "label": "项目模板脚手架",
         "children": [],
-        "link": "articles/plugins/tsn-cli.md"
+        "link": "articles/tsn-cli.md"
       }
     ]
   },
@@ -61,19 +61,19 @@
         "id": "IIqOtmL-dkKSZHfPHDX48",
         "label": "前端组件库搭建、工具库搭建",
         "children": [],
-        "link": "articles/base/build-library.md"
+        "link": "articles/build-library.md"
       },
       {
         "id": "djbO_0vycufQO6z7zAoNK",
         "label": "建设私有npm包管理",
         "children": [],
-        "link": "articles/base/npm.md"
+        "link": "articles/npm.md"
       },
       {
         "id": "w881I-Op5LUAQQVqL_7K4",
         "label": "快速建立代码规范及美化",
         "children": [],
-        "link": "articles/plugins/norm.md"
+        "link": "articles/norm.md"
       }
     ]
   },
@@ -85,7 +85,7 @@
         "id": "H3ZBf97Yk6SvZaO8YHF2G",
         "label": "工具 - GitPush自动化",
         "children": [],
-        "link": "articles/plugins/gp-cli.md"
+        "link": "articles/gp-cli.md"
       }
     ]
   }

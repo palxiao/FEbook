@@ -27,8 +27,8 @@ vue add vue-cli-plugin-norm
 
 安装预览: 
 
-![](../../images/norm/install.png)
+![](../images/install.png)
 
 提交功能预览: 
 
-![](../../images/norm/c.png)
+![](../images/c.png)
