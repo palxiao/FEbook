@@ -2,7 +2,6 @@
     * [Vue](articles/vue.md)
     * [前端面试题&知识体系整理](articles/1660532996882.md)
     * [笔记 | 实用类库整理 | 实用技巧](articles/实用类库.md)
-    * [前端实用技巧记录](articles/实用技巧.md)
     * [公司技术分享记录.md](articles/技术分享.md)
     * [微前端与巨石应用.md](articles/微前端.md)
 * 插件/效率工具
