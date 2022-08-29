@@ -105,3 +105,7 @@ event：input -> update:modelValue
 ### 引入图片地址的方法
 
 在vue2中一般使用`require('@/assets/xxx.png')`来引用图片，在vue3中由于配套工具不支持require，故可以用`await import('@/assets/xxx.png)`来引用图片或资源。
+
+### 其他异同
+
+Vue3 中已废弃 filter（过滤器）
