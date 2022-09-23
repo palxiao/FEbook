@@ -10,9 +10,7 @@
 基于Docsify驱动，部署在GithubPages。
 
 ```sh
-本地启动: 
-
-docsify serve docs
+本地启动: docsify serve docs
 ```
 
 > 少壮不努力，老大写程序。
