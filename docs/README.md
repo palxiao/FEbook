@@ -7,12 +7,8 @@
 
 # Front End Book
 
-基于Docsify驱动，部署在GithubPages。
-
 ```sh
-本地启动: 
-
-docsify serve docs
+基于 Docsify 驱动，部署在 GithubPages。本地启动: docsify serve docs
 ```
 
 > 少壮不努力，老大写程序。
@@ -26,7 +22,7 @@ docsify serve docs
 >
 > 代码是写给人看的，附带在机器上运行的功能。
 >
-> 很惭愧，一无所成，卖码为生，只希望在学习和分享的道路上能做一点微小的贡献。
+> 很惭愧，只希望在学习和分享的道路上能做一点微小的贡献。
 > 
 > 欢迎关注我的公众号，我们一起做有品位的前端。
 >
