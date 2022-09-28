@@ -5,8 +5,6 @@
  * blog.palxp.com/book.palxp.com
 -->
 
-# Front End Book
-
 ```sh
 基于 Docsify 驱动，部署在 GithubPages。本地启动: docsify serve docs
 ```
