@@ -1,7 +1,3 @@
-```sh
-本文档基于 Docsify 驱动，部署在 GithubPages。本地启动: docsify serve docs
-```
-
 ### About me
 
 > Hello，很高兴你找到这里，我叫**茶无味**。
@@ -12,3 +8,5 @@
 >
 
 <img src="https://book.palxp.com/wechat.png" height = "160" alt="" align=center />
+
+> 本文档基于 Docsify 驱动，部署在 GithubPages，基于 [Vue + Electron](https://juejin.cn/post/7127593631606636581) 提供编辑器。
