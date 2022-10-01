@@ -1,10 +1,3 @@
-<!--
- * @Author: ShawnPhang
- * @LastEditors: ShawnPhang
- * @Description: 
- * blog.palxp.com/book.palxp.com
--->
-
 ```sh
 基于 Docsify 驱动，部署在 GithubPages。本地启动: docsify serve docs
 ```
