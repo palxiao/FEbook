@@ -21,6 +21,12 @@
 
 如果你乐于和我交流，可以叫我小天，或者随你喜欢都可以。
 
+### More
+
+目前比较活跃于[稀土掘金社区](https://juejin.cn/user/2682464103060541/posts)，当然你也可以在下面这些地方找到我：
+
+[头条号](https://www.toutiao.com/c/user/token/MS4wLjABAAAARwn6TtOx1OWIcfzBKm-RIY5k9GmkeMsFBIkKMeSkrLw/?)、[知乎](https://www.zhihu.com/people/peng-xiao-peng-61-10/posts)、[infoQ](https://infoq.cn/u/shawn)、[思否](https://segmentfault.com/u/shawnphang)、[51CTO](https://blog.51cto.com/palxp)、[开源中国](https://my.oschina.net/u/3496975)、[CSDN](https://blog.csdn.net/tllxltw27)
+
 ### Hobby
 
 兴趣爱好挺宅的，音乐动漫板绘都喜欢，特别爱玩游戏，基本什么都玩，学编程的初衷就是为了**做游戏**，因为要学的东西很多，所以目前web前端才是主职，但梦想还是要有的，路漫漫其修远兮。
