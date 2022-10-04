@@ -88,5 +88,17 @@
         "link": "articles/gp-cli.md"
       }
     ]
+  },
+  {
+    "id": "9V1KqMlO6IcIoRBSEUFAT",
+    "label": "临时笔记",
+    "children": [
+      {
+        "id": "4Kaw0R9V2ESXgRVryyJuT",
+        "label": "Temp",
+        "children": [],
+        "link": "articles/1664894579578.md"
+      }
+    ]
   }
 ]
