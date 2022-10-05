@@ -39,4 +39,4 @@
 
 最近在看：**赛博朋克边缘行者**
 
-> <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+> <div style="font-size:12px;color:#888888"><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>；<span id="busuanzi_container_site_pv">你是第<span id="busuanzi_value_site_uv"></span>个来访者。</span></div>
