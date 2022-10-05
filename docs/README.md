@@ -38,5 +38,3 @@
 最近在玩：**原神**
 
 最近在看：**赛博朋克边缘行者**
-
-> <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
