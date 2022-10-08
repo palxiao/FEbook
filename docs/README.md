@@ -9,7 +9,7 @@
 > 欢迎关注我的公众号，我们一起品味前端，做有品位的前端开发。
 >
 
-<img src="https://book.palxp.com/wechat.png" height = "160" />
+<img src="https://book.palxp.com/wechat.png" width = "70%" />
 
 ### Footprint
 
