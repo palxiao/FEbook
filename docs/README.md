@@ -15,7 +15,7 @@
 
 目前比较活跃于[稀土掘金社区](https://juejin.cn/user/2682464103060541/posts)，当然你也可以在下面这些地方找到我：
 
-[我的博客](https://blog.palxp.com)、[头条号](https://www.toutiao.com/c/user/token/MS4wLjABAAAARwn6TtOx1OWIcfzBKm-RIY5k9GmkeMsFBIkKMeSkrLw/?)、[知乎](https://www.zhihu.com/people/peng-xiao-peng-61-10/posts)、[infoQ](https://infoq.cn/u/shawn)、[思否](https://segmentfault.com/u/shawnphang)、[51CTO](https://blog.51cto.com/palxp)、[开源中国](https://my.oschina.net/u/3496975)、[CSDN](https://blog.csdn.net/tllxltw27)
+[我的博客](https://blog.palxp.com)、[头条号](https://www.toutiao.com/c/user/token/MS4wLjABAAAARwn6TtOx1OWIcfzBKm-RIY5k9GmkeMsFBIkKMeSkrLw/?)、[知乎](https://www.zhihu.com/people/peng-xiao-peng-61-10/posts)、[infoQ](https://infoq.cn/u/shawn)、[思否](https://segmentfault.com/u/shawnphang)、[51CTO](https://blog.51cto.com/palxp)、[开源中国](https://my.oschina.net/u/3496975)
 
 ### About me
 
