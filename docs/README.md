@@ -2,7 +2,7 @@
 
 ### Hello
 
-> 很高兴你找到这里，我叫**茶无味**。
+> 很高兴见到你，这里是**茶无味**。
 >
 > 目前专注web前端领域的技术文章创作，也希望能在学习与分享的道路上做一点微小的贡献。
 > 
@@ -11,17 +11,9 @@
 
 <img src="/wechat.png" width = "70%" />
 
-### Footprint
-
-目前比较活跃于[稀土掘金社区](https://juejin.cn/user/2682464103060541/posts)，当然你也可以在下面这些地方找到我：
-
-[我的博客](https://blog.palxp.com)、[头条号](https://www.toutiao.com/c/user/token/MS4wLjABAAAARwn6TtOx1OWIcfzBKm-RIY5k9GmkeMsFBIkKMeSkrLw/?)、[知乎](https://www.zhihu.com/people/peng-xiao-peng-61-10/posts)、[infoQ](https://infoq.cn/u/shawn)、[思否](https://segmentfault.com/u/shawnphang)、[51CTO](https://blog.51cto.com/palxp)、[开源中国](https://my.oschina.net/u/3496975)
-
 ### About me
 
-我以前常用的网名叫**罡风惊天**，是在很早的时候刚拥有第一个QQ账号时学我表妹起的名，非常直接地取自**仙剑奇侠传三**里的风系仙术名称，十几年没改过。之所以后来起了**茶无味**这个名，还真不是因为我爱喝茶。
-
-去年(2021)在**稀土掘金社区**写文时，掘金的活动经常送**马克杯**，我也就开始天天喝茶(车仔茶包)，每天喝到茶没味道的时候，也就差不多快下班，再加上当时看到一个表情包，配图文字是：*一杯茶 一包烟 一个接口对一天*，顿时就觉得很应景，于是出于戏谑当时的我，就起了「**茶无味的一天**」这个名。
+去年(2021)在[**掘金社区**](https://juejin.cn/user/2682464103060541/posts)写文时，活动经常送**马克杯**，我也就开始习惯天天喝茶(泡车仔茶包)，每天喝到茶没味道的时候，也就差不多快下班，再加上当时看到一个表情包，配图文字是：*一杯茶 一包烟 一个接口对一天*，顿时就觉得很应景，于是出于戏谑当时的我，就起了「**茶无味的一天**」这个名。
 
 <img src="/images/0.9214494194923779.jpg" width="25%" />
 
