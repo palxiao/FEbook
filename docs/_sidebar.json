@@ -98,25 +98,28 @@
         "label": "Temp",
         "children": [],
         "link": "articles/1664894579578.md",
-        "hide": true
+        "hide": false
       },
       {
         "id": "8tTkvBuXtv353EN0earbO",
         "label": "在线相册项目",
         "children": [],
-        "link": "articles/1665301268283.md"
+        "link": "articles/1665301268283.md",
+        "hide": true
       },
       {
         "id": "mkPJKtyE3Xp1V3ufIRnir",
         "label": "预览",
         "children": [],
-        "link": "articles/1666679944838.md"
+        "link": "articles/1666679944838.md",
+        "hide": true
       },
       {
         "id": "-047Z2B3mon_KShD3XQdA",
         "label": "css镜像渐变",
         "children": [],
-        "link": "articles/1667025769552.md"
+        "link": "articles/1667025769552.md",
+        "hide": true
       }
     ]
   }
