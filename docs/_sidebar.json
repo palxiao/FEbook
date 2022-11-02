@@ -97,7 +97,8 @@
         "id": "4Kaw0R9V2ESXgRVryyJuT",
         "label": "Temp",
         "children": [],
-        "link": "articles/1664894579578.md"
+        "link": "articles/1664894579578.md",
+        "hide": true
       },
       {
         "id": "8tTkvBuXtv353EN0earbO",
