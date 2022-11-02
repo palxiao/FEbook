@@ -15,5 +15,4 @@
     * [工具 - GitPush自动化](articles/gp-cli.md)
 * 临时笔记
     * [Temp](articles/1664894579578.md)
-    * [预览](articles/1666679944838.md)
     * [css镜像渐变](articles/1667025769552.md)
