@@ -10,14 +10,8 @@
         "link": "articles/vue.md"
       },
       {
-        "id": "lDG3JO17fzY6racRdmgIo",
-        "label": "前端面试题&知识体系整理",
-        "children": [],
-        "link": "articles/1660532996882.md"
-      },
-      {
         "id": "HBzr6Dh-KJK5x-9T8H8bK",
-        "label": "笔记 | 实用类库整理 | 实用技巧",
+        "label": "实用类库、技巧收集整理",
         "children": [],
         "link": "articles/实用类库.md"
       },
@@ -101,15 +95,32 @@
       },
       {
         "id": "SlF96UPsC8BmwVnnKwAlF",
-        "label": "LeetCode热题Hot100",
+        "label": "LeetCode 热题 Hot100",
         "children": [],
         "link": "articles/1667968995198.md"
       }
     ]
   },
   {
+    "id": "A1ScQNha6MVraIKQUBX-e",
+    "label": "面试进阶",
+    "children": [
+      {
+        "id": "lDG3JO17fzY6racRdmgIo",
+        "label": "前端面试题&知识体系整理",
+        "children": [],
+        "link": "articles/1660532996882.md"
+      },
+      {
+        "id": "8B9qlOtSpgSkVleMgCBdU",
+        "label": "编程题",
+        "children": []
+      }
+    ]
+  },
+  {
     "id": "9V1KqMlO6IcIoRBSEUFAT",
-    "label": "临时",
+    "label": "临时笔记",
     "children": [
       {
         "id": "4Kaw0R9V2ESXgRVryyJuT",
@@ -133,10 +144,5 @@
         "hide": true
       }
     ]
-  },
-  {
-    "id": "A1ScQNha6MVraIKQUBX-e",
-    "label": "面试进阶",
-    "children": []
   }
 ]
