@@ -13,8 +13,8 @@
     * [快速建立代码规范及美化](articles/norm.md)
 * 实验室
     * [工具 - GitPush自动化](articles/gp-cli.md)
-* 临时笔记
-    * [Temp](articles/1664894579578.md)
 * 算法
     * [他奠定了当今计算机算法的规范化和量化度量](articles/1670311155074.md)
     * [LeetCode热题Hot100](articles/1667968995198.md)
+* 临时笔记
+    * [Temp](articles/1664894579578.md)
