@@ -16,7 +16,7 @@
     * [Temp](articles/1664894579578.md)
 * 算法
     * [他奠定了当今计算机算法的规范化和量化度量](articles/1670311155074.md)
-    * [LeetCode热题Hot100](articles/1667968995198.md)
+    * [LeetCode 热题 Hot100](articles/1667968995198.md)
 * 面试进阶
     * [前端面试题&知识体系整理](articles/1660532996882.md)
-    * JS 经典高频面试题库
+    * [JS 经典高频面试题库](articles/1670497905099.md)
