@@ -1,0 +1,1 @@
+import{d as c,o as r,c as s,u as a,a as d,r as l}from"./index-6746139e.js";const u=c({setup(){const e=a();r(()=>{window.addEventListener("scroll",o);function o(){const n=document.documentElement.scrollTop||window.pageYOffset||document.body.scrollTop;e.commit("changeScroll",n)}})}});function _(e,o,n,p,i,m){const t=l("router-view");return d(),s(t)}u.render=_;export{u as default};
