@@ -1,4 +1,4 @@
-> 太久不维护了，vite还是引用的2.x版本，[点击此处](https://github.com/vitejs/awesome-vite#templates)前往官方推荐模板列表。
+> 太久没维护了不建议使用，vite还是引用的2.x版本，官方推荐模板列表指引: [点击此处](https://github.com/vitejs/awesome-vite#templates)。
 
 ### tsn-cli
 
