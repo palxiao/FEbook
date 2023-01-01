@@ -1,62 +1,59 @@
 <!DOCTYPE html>
 <html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ name }}</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>茶无味的一天</title>
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <link rel="stylesheet" href="style/main.css">
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-</head>
-
-<body>
-  <nav style="margin-right: 2rem;">
-    <a href="https://blog.palxp.com">进入博客</a>
-    <a href="https://juejin.cn/user/2682464103060541/posts"><img class="juejin"
-    src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/7abc2b532f725d394feaf0141547ade7.svg" /></a>
-  </nav>
-  <div id="app"></div>
-  <!-- <span id="busuanzi_container_site_uv">uv:<span id="busuanzi_value_site_uv"></span></span>
+  <body>
+    <nav style="margin-right: 2rem">
+      {{ blog }}
+      {{ juejin }}
+    </nav>
+    <div id="app"></div>
+    <!-- <span id="busuanzi_container_site_uv">uv:<span id="busuanzi_value_site_uv"></span></span>
   <span id="busuanzi_container_site_pv">pv:<span id="busuanzi_value_site_pv"></span></span> -->
-  <script>
-    window.$docsify = {
-      name: '茶无味的一天',
-      repo: 'palxiao/FEbook',
-      loadNavbar: true,
-      loadSidebar: true,
-      subMaxLevel: 2, // 显示目录
-      search: {
-        placeholder: {
-          '/zh-cn/': '搜索',
-          '/': 'Type to search'
+    <script>
+      window.$docsify = {
+        name: '茶无味的一天',
+        repo: 'palxiao/FEbook',
+        loadNavbar: true,
+        loadSidebar: true,
+        subMaxLevel: 2, // 显示目录
+        search: {
+          placeholder: {
+            '/zh-cn/': '搜索',
+            '/': 'Type to search',
+          },
+          noData: {
+            '/zh-cn/': '搜索不到结果',
+            '/': '搜索不到结果',
+          },
+          // 搜索标题的最大层级, 1 - 6
+          depth: 1,
+          hideOtherSidebarContent: false, // 是否隐藏其他侧边栏内容
         },
-        noData: {
-          '/zh-cn/': '搜索不到结果',
-          '/': '搜索不到结果'
+        count: {
+          countable: true,
+          fontsize: '0.9em',
+          color: 'rgb(90,90,90)',
+          language: 'chinese',
+          isExpected: true,
         },
-        // 搜索标题的最大层级, 1 - 6
-        depth: 1,
-        hideOtherSidebarContent: false, // 是否隐藏其他侧边栏内容
-      },
-      count: {
-        countable: true,
-        fontsize: '0.9em',
-        color: 'rgb(90,90,90)',
-        language: 'chinese',
-        isExpected: true
-      },
-    }
-  </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script><script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script><script src="//unpkg.com/docsify-count/dist/countable.js"></script>
-</body>
-
+      }
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    {{ plugins }}
+  </body>
 </html>
