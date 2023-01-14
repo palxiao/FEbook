@@ -151,5 +151,17 @@
         "hide": true
       }
     ]
+  },
+  {
+    "id": "56SqhEUS76Fj2aDi2yA7O",
+    "label": "游戏",
+    "children": [
+      {
+        "id": "Ju5iD269w9NkEwd-eANn1",
+        "label": "新建笔记",
+        "children": [],
+        "link": "articles/1673676014916.md"
+      }
+    ]
   }
 ]
