@@ -20,7 +20,7 @@
 
 > 茶无味的小事纪：
 **2022.06** - 《[我用三个月时间仿造了一个稿定设计](https://juejin.cn/post/7113919111905673247)》2022年中总结
- - 2022.08 稀土掘金-创作者训练营优秀学员
+ - 2022.08 稀土掘金-创作者训练营[优秀学员](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4a6bb5593e974727b50d19ae841dff38~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
 
 ### Hobby
 
