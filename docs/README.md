@@ -24,7 +24,7 @@
 **2022.09** | 稀土掘金-入选倔力计划创作者 [月榜作者](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/56101c9d25194e0081d5695cc1b6e391~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
 **2022.12** | 2022年度人气作者No.87
 **2022.12** | 码上掘金迎新年[编程挑战赛](https://juejin.cn/challenge/2/result)二等奖
-**2023.01** | 入选稀土掘金 - 2022年度影响力榜单，获得年度爆款好文奖
+**2023.01** | 入选稀土掘金 - 2022年度影响力榜单，获得[年度爆款好文奖](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c8c4007aaf3a4c31a68700bee7633761~tplv-k3u1fbpfcp-watermark.image?)
 
 ### Hobby
 
