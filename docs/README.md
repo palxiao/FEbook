@@ -26,8 +26,6 @@
 >
 >**2022.12** | 《[5年前端迷茫中坚定](https://juejin.cn/post/7179064202575740989)》2022年终总结
 >
->**2022.12** | 掘金2022年度人气作者No.87
->
 >**2022.12** | 码上掘金迎新年[编程挑战赛](https://juejin.cn/challenge/2/result)中获二等奖
 >
 >**2023.01** | 稀土掘金-入选2022年度影响力榜单，获得[年度爆款好文奖](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c8c4007aaf3a4c31a68700bee7633761~tplv-k3u1fbpfcp-watermark.image?)
