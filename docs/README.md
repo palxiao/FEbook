@@ -1,5 +1,5 @@
 
-> 本文档基于 Docsify 驱动，部署在 GithubPages，[Vue + Electron](https://juejin.cn/post/7127593631606636581) 提供编辑器。
+> 本文档基于 Docsify 驱动，部署在 GithubPages，使用 [Vue + Electron](https://juejin.cn/post/7127593631606636581) 提供编辑器。
 
 ### Hello
 
