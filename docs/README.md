@@ -1,5 +1,5 @@
 
-> 本文档基于 Docsify 驱动，部署在 GithubPages，基于 [Vue + Electron](https://juejin.cn/post/7127593631606636581) 提供编辑器。
+> 本文档基于 Docsify 驱动，部署在 GithubPages，[Vue + Electron](https://juejin.cn/post/7127593631606636581) 提供编辑器。
 
 ### Hello
 
@@ -39,7 +39,7 @@
 >
 > **喜欢的动漫**：灵笼、朝花夕誓、言叶之庭、声之形、狼孩子雨和雪、赛博朋克边缘行者
 >
-> **最近在玩**：原神
+> **最近在玩**：原神、八方旅人
 >
 > **最近在看**：间谍过家家
 
