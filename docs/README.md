@@ -1,6 +1,4 @@
 
-> 本文档基于 Docsify 驱动，部署在 GithubPages，使用 [Vue + Electron](https://juejin.cn/post/7127593631606636581) 提供编辑器。
-
 ### Hello
 
 > 很高兴见到你，这里是**茶无味**🍻
@@ -33,17 +31,13 @@
 
 ### Hobby
 
-兴趣爱好都挺宅的，音乐动漫板绘等等，爱玩游戏，学编程的初衷也是为了做游戏。
+兴趣爱好都挺宅的，音乐动漫板绘等等；爱玩游戏，学编程的初衷也是为了能做游戏。
 
-> **喜欢的游戏**：仙剑奇侠传、尼尔机械纪元、最终幻想系列
->
-> **喜欢的动漫**：灵笼、朝花夕誓、言叶之庭、声之形、狼孩子雨和雪、赛博朋克边缘行者
->
-> **最近在玩**：原神、八方旅人
->
-> **最近在看**：间谍过家家
+**喜欢的游戏**：《仙剑奇侠传》《尼尔机械纪元》《最终幻想系列》、**最近在玩**：《原神》《八方旅人》、**喜欢的动漫**：《朝花夕誓》《言叶之庭》《声之形》《狼孩子雨和雪》《赛博朋克边缘行者》、**最近在看**：《间谍过家家》《致不灭的你》
 
 -----
 
-<div style="font-size:12px;color:#888888"><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>，<span id="busuanzi_container_site_pv">共有<span id="busuanzi_value_site_uv"></span>位小伙伴在此留下足迹。</span></div>
+> 文档基于 Docsify 驱动，部署在 GithubPages，使用 [Vue + Electron](https://juejin.cn/post/7127593631606636581) 提供编辑器。
+
+<div style="font-size:12px;color:#888888"><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>，<span id="busuanzi_container_site_pv">共有<span id="busuanzi_value_site_uv"></span>位小伙伴在此留下足迹。</span> <a href="https://support.qq.com/product/496599">公共留言板</a></div>
 
