@@ -16,13 +16,13 @@
 
 > 茶无味的小事记：
 > 
->**2023.01** | 稀土掘金-入选2022年度影响力榜单，获得[年度爆款好文奖](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c8c4007aaf3a4c31a68700bee7633761~tplv-k3u1fbpfcp-watermark.image?)
+>**2023.01** | 稀土掘金-入选 2022 年度影响力榜单，获得「[年度爆款好文奖](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c8c4007aaf3a4c31a68700bee7633761~tplv-k3u1fbpfcp-watermark.image?)」
 >
 >**2022.12** | 码上掘金迎新年[编程挑战赛](https://juejin.cn/challenge/2/result)取得二等奖
 >
->**2022.12** | 《[5年前端迷茫中坚定](https://juejin.cn/post/7179064202575740989)》2022年终总结
+>**2022.12** | 《[5年前端迷茫中坚定](https://juejin.cn/post/7179064202575740989)》2022 年终总结
 >
->**2022.09** | 稀土掘金-倔力计划[月榜作者](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/56101c9d25194e0081d5695cc1b6e391~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)、创作等级达到Lv5
+>**2022.09** | 稀土掘金-倔力计划[月榜作者](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/56101c9d25194e0081d5695cc1b6e391~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)、创作等级达到 Lv5
 >
 >**2022.08** | 稀土掘金-创作者训练营[优秀学员](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4a6bb5593e974727b50d19ae841dff38~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
 >
@@ -35,7 +35,7 @@
 
 -----
 
-> 文档基于 Docsify 驱动，部署在 GithubPages，使用 [Vue + Electron](https://juejin.cn/post/7127593631606636581) 提供编辑器。
+> 本文档基于 Docsify 驱动，部署在 GithubPages，使用 [Vue + Electron](https://juejin.cn/post/7127593631606636581) 提供编辑器。
 
 <div style="font-size:12px;color:#888888"><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>，<span id="busuanzi_container_site_pv">共有<span id="busuanzi_value_site_uv"></span>位小伙伴在此留下足迹。</span> <a href="https://support.qq.com/product/496599">公共留言板</a></div>
 
