@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-cn">
   <head>
     <meta charset="UTF-8" />
     <title>茶无味的一天</title>
@@ -9,9 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+    <link rel="stylesheet" href="lib/themes/vue.css" />
     <link rel="stylesheet" href="style/main.css" />
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   </head>
 
   <body>
@@ -21,13 +20,11 @@
     src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/7abc2b532f725d394feaf0141547ade7.svg" /></a>
     </nav>
     <div id="app"></div>
-    <!-- <span id="busuanzi_container_site_uv">uv:<span id="busuanzi_value_site_uv"></span></span>
-  <span id="busuanzi_container_site_pv">pv:<span id="busuanzi_value_site_pv"></span></span> -->
     <script>
       window.$docsify = {
         name: '茶无味的一天',
         repo: 'palxiao/FEbook',
-        loadNavbar: true,
+        loadNavbar: false,
         loadSidebar: true,
         subMaxLevel: 2, // 显示目录
         search: {
@@ -40,7 +37,7 @@
             '/': '搜索不到结果',
           },
           // 搜索标题的最大层级, 1 - 6
-          depth: 1,
+          depth: 3,
           hideOtherSidebarContent: false, // 是否隐藏其他侧边栏内容
         },
         count: {
@@ -53,8 +50,10 @@
       }
     </script>
     <!-- Docsify v4 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="lib/docsify@4.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script><script src="//unpkg.com/docsify-count/dist/countable.js"></script>
   </body>
+
+  <script src="lib/prepare.js"></script>
 </html>
