@@ -97,7 +97,7 @@ event：input -> update:modelValue
 
 在vue2中一般使用`require('@/assets/xxx.png')`来引用图片，在vue3中由于配套工具不支持require，故可以用`await import('@/assets/xxx.png)`来引用图片或资源。
 
-### 其他差异
+### Vue3 差异
 
 Vue3 中已废弃 filter（过滤器）
 
@@ -123,12 +123,12 @@ functional 属性在单文件组件 (SFC)
 **渲染函数**
     
 渲染函数API改变
-`$scopedSlots property` 已删除，所有插槽都通过 $slots 作为函数暴露
+`$scopedSlots property` 已删除，所有插槽都通过 `$slots` 作为函数暴露
 自定义指令 API 已更改为与组件生命周期一致
 一些转换 class 被重命名了：
-v-enter -> v-enter-from
-v-leave -> v-leave-from
-组件 watch 选项和实例方法 $watch不再支持点分隔字符串路径，请改用计算函数作为参数
+`v-enter` -> `v-enter-from`
+`v-leave` -> `v-leave-from`
+组件 watch 选项和实例方法 $watch 不再支持点分隔字符串路径，请改用计算函数作为参数
 在 Vue 2.x 中，应用根容器的 outerHTML 将替换为根组件模板 (如果根组件没有模板/渲染选项，则最终编译为模板)。VUE3.x 现在使用应用程序容器的 innerHTML。
 
 **其他**
