@@ -16,9 +16,9 @@
 
 > 茶无味的小事记：
 > 
-> **2023.02** | 稀土掘金[兔兔创意投稿大赛](https://juejin.cn/post/7202135679227969596#heading-0) - 最佳创意奖第二名
+> **2023.02** | [兔兔创意投稿大赛](https://juejin.cn/post/7202135679227969596#heading-0) - 最佳创意奖第二名
 > 
->**2023.01** | 稀土掘金-入选 2022 年度影响力榜单，获得「[年度爆款好文奖](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c8c4007aaf3a4c31a68700bee7633761~tplv-k3u1fbpfcp-watermark.image?)」
+>**2023.01** | 入选稀土掘金 2022 年度影响力榜单，获得「[年度爆款好文奖](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c8c4007aaf3a4c31a68700bee7633761~tplv-k3u1fbpfcp-watermark.image?)」
 >
 >**2022.12** | 码上掘金迎新年[编程挑战赛](https://juejin.cn/challenge/2/result)二等奖
 >
