@@ -113,13 +113,13 @@
     "children": [
       {
         "id": "lDG3JO17fzY6racRdmgIo",
-        "label": "Web 前端面试必知必会详尽手册",
+        "label": "Web 前端必知必会知识手册",
         "children": [],
         "link": "articles/1660532996882.md"
       },
       {
         "id": "8B9qlOtSpgSkVleMgCBdU",
-        "label": "JS 经典高频面试题库",
+        "label": "JS 经典高频编程题库",
         "children": [],
         "link": "articles/1670497905099.md"
       },

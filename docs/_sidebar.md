@@ -17,8 +17,8 @@
     * [LeetCode 热题 Hot100](articles/1667968995198.md)
     * [学习资料](articles/1671617715220.md)
 * 面试进阶
-    * [Web 前端面试必知必会详尽手册](articles/1660532996882.md)
-    * [JS 经典高频面试题库](articles/1670497905099.md)
+    * [Web 前端必知必会知识手册](articles/1660532996882.md)
+    * [JS 经典高频编程题库](articles/1670497905099.md)
     * [JS 易错题小记](articles/1675044612165.md)
 * 临时笔记
     * [Temp](articles/1664894579578.md)
