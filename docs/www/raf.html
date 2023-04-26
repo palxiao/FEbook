@@ -271,8 +271,8 @@
       function step() {
         x *= 0.95
         y *= 0.95
-        offset.left += x * 0.3
-        offset.top += y * 0.3
+        offset.left += x * 1
+        offset.top += y * 1
         changeStyle(cloneEl, ['transition: all 0s', `transform: translate(${offset.left + 'px'}, ${offset.top + 'px'}) scale(${scale})`, `transform-origin: ${origin}`])
         if (Math.abs(x) > 1 || Math.abs(y) > 1) {
           rafUnit = requestAnimationFrame(step)
