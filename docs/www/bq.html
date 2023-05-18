@@ -1,0 +1,369 @@
+<!--
+ * @Author: ShawnPhang
+ * @Date: 2023-05-13 17:57:51
+ * @Description: 思维便签 Vue3
+ * @LastEditors: ShawnPhang <site: book.palxp.com>
+ * @LastEditTime: 2023-05-13 18:24:29
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>思维便签</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+    </style>
+    <style>
+         /* CSS 圆环样式 */
+      .circle_process {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        width: 4rem;
+        height: 4rem;
+      }
+      .circle_process .wrapper {
+        width: 2rem;
+        height: 4rem;
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+      }
+      .circle_process .right {
+        right: 0;
+      }
+      .circle_process .left {
+        left: 0;
+      }
+      .circle_process .circle {
+        width: 4rem;
+        height: 4rem;
+        border: 4px solid transparent;
+        border-radius: 50%;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        transform: rotate(-135deg);
+      }
+      .circle_process .rightcircle {
+        border-top: 4px solid var(--juejin-brand-1-normal);
+        border-right: 4px solid var(--juejin-brand-1-normal);
+        right: 0;
+        animation: circle_right 3s linear infinite;
+        /* animation-duration: 1s; */
+      }
+      .circle_process .leftcircle {
+        border-bottom: 4px solid var(--juejin-brand-1-normal);
+        border-left: 4px solid var(--juejin-brand-1-normal);
+        left: 0;
+        animation: circle_left 3s linear infinite;
+        /* animation-duration: 1s; */
+      }
+      @keyframes circle_right {
+        0% {
+          transform: rotate(-135deg);
+        }
+        50%,
+        100% {
+          transform: rotate(45deg);
+        }
+      }
+      @keyframes circle_left {
+        0%,
+        50% {
+          transform: rotate(-135deg);
+        }
+        100% {
+          transform: rotate(45deg);
+        }
+      }
+      /* 模态窗 */
+      .modal {
+        touch-action: none;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.75);
+        user-select: none;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* 便签样式 */
+      .paper {
+        touch-action: none;
+        position: absolute;
+        /* opacity: 0.9; */
+        background: url(https://pic2.imgdb.cn/item/645358da0d2dde57777c4bf7.png) no-repeat center center;
+        background-size: contain;
+        width: 210px;
+        height: 210px;
+        font-family: 'Long Cang', cursive, sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 2px;
+      }
+      .del {
+        background: url(https://pic2.imgdb.cn/item/64573ff40d2dde57770ea833.png) no-repeat center center;
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        right: -2px;
+        top: -3px;
+        transform: scale(0.9);
+      }
+      .del:hover {
+        transform: scale(1);
+        cursor: pointer;
+      }
+      .paper:active {
+        background: url(https://pic2.imgdb.cn/item/645358da0d2dde57777c4bd5.png) no-repeat center center;
+        opacity: 1;
+      }
+      .paper:active > div {
+        transform: rotate(0deg);
+      }
+      .paper > .text {
+        padding: 30px 19px;
+        transform: rotate(2deg);
+        outline: none;
+      }
+
+      #point_circle {
+        display: none;
+      }
+      #point_circle,
+      .circle_process .circle {
+        width: 34px;
+        height: 34px;
+      }
+      .circle_process .wrapper {
+        width: 17px;
+        height: 34px;
+      }
+
+      .rightcircle,
+      .leftcircle {
+        animation-duration: 0.6s !important;
+        animation-iteration-count: 1 !important;
+      }
+
+      body, html {
+        cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACBklEQVR4nLWV3VHCQBSFzwLvxAqM74BYgaECtQOsQDowViBWIHaAFbh0kBl4N1YgvAPxWzJhQMkPzPjNHPfeuNmze3ezGP0zRxm02+3rer2+iIC0EpUMWq3WozFmkCSJR+p4mc1mA9pSSg06nc5gvV4/E36hkaRbdIl6mFiVYFAhzN5Kum40GmdUZk4eSPpAFoMebSEGFcKAlvKcT6fTC9IN7pkw5fkdz8fEuRi0pQur1apJuIW6D2m6rOCCFcQCuvn0iwgTNv0qe36IjQF1fqDOQ8JcmO2Y2d4RbuBE9TF/JYww72EyJ/6DYfDdTRyjOToINQ+1Q/Yu5jFmI+1Qq9Vi9G6YyTf/XDCLbpQziyIyE8JDWMOGJQQTZhfoRNyeYHKL/hg5A6v0RNxT45FOhHECpcd3D4O7OzmWMjXJ98D0DdO+KpBrgNwSveVyOSAMlOKhS/RE6UJVoNDgNxj6GH4SWgx6tKUcZeDghYgS+ZTIIy2F/oGONLBi81lBbp9d6B/oSINQ0iOqdDXTP1BqMEGh0pv33PAnF15KaCYYBCqBD7bPSXwltJQ2FAbkfplBTOfsQpvzaIs7CHxYN6gvUnSISaFBdg1gEjObkYDYF8eZ3BeQL2gseUS7B9fP0NAWwipCBnE/l03SDeRu0LETp8y1uZQaZFCSLt+Gx6xiyhWrIpUNTuUHQ/v5ezvj660AAAAASUVORK5CYII=), auto;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-size: 16px;
+      }
+      html:active {
+        cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB4ElEQVR4nOWU7VHCQBCGN0ABdCD85yN2ECowVgAdCBWAHcQKwArQCgwVED7+CxUY/8PEZxM+xwNMGGec8Zm52d2723tzewuW/DL/SMC27dJqtWriSqFQeMbIer2+yefznwEQGrEYRiqViiMiXYYjIr4k9hQ+ovfohPhHGAU2h78xlAmjzlhaltXGShRFHiYkVusS32FjmBtwq85WzChQrVZfNImvumVjUKvV2sThbDYbCLDeIl7M53NfgDjUWBLqDJ+1BnYvQI2L1LQbRZEjhIwJm9RubyTEvoAh7uH3BBAbcEaTjyvzbYudAAtDFlzcJUNZkOQIIF4S0AQBU7z1VUySt2uQ71s48QY65J36vVIG105u4+G3JCVGASYdSR71kcmegM7h+5IS8nryJwQokx0Abio4y8M88MhxB54UyApnjXnLMu9XJJRYQKGLQkzEj6SBcICfGi5dpFk+EIibhakjAZc2HbIYZhXZnpHL5TrT6dRjai+gsKHFhn5WEcrjYXb1xz8WUK4RQWBM3q7+yjcBJasIAhFmRKM4ssEooCAS1xP3iYQ29iwc7oihE08KKIiEGHTiv+ezcFubfe7hAyuXBFok9XF/yoivd+SAswLKprdt3LPQOWEAuEdcFLiWL3uwNygcm22dAAAAAElFTkSuQmCC), auto;
+      }
+
+      .help {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 2px;
+        margin: 2px;
+      }
+      .help > img {
+        margin-right: 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" style="--juejin-brand-1-normal: #1e80ff">
+      <div id="page">
+        <div v-for="(item, i) in listData" :key="'p'+i" :id="i" :style="[{overflow: editIndex==i?'visible':'hidden'}, {left: item.x + 'px', top: item.y + 'px'}]" class="paper">
+          <div class="text" v-model="item.text" :style="{pointerEvents: editIndex==i?'all':'none'}" spellcheck="false" @input="changeText($event, i)" @blur="writeDone" contenteditable="plaintext-only">{{item.text}}</div>
+          <div v-show="editIndex==i" @click="del(i)" class="del"></div>
+        </div>
+        <button class="help" @click="openTip"><img src="https://pic2.imgdb.cn/item/64573ff40d2dde57770ea83b.png" /> 查看帮助</button>
+      </div>
+      <!-- 圆圈进度 -->
+      <div id="point_circle" class="circle_process">
+        <div class="wrapper right">
+          <div class="circle rightcircle"></div>
+        </div>
+        <div class="wrapper left">
+          <div class="circle leftcircle"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+      const todoExtra = {
+        initData: [
+          { text: '输入字数在40个字之内', x: 65.90625, y: 53.0078125 },
+          { text: '码上掘金是由\n稀土掘金推出\n的在线\ncode playground', x: 407.1640625, y: 342.015625 },
+          { text: '码上掘金编程比赛旨在为掘友们提供平台进行技术交流，挥洒灵感、迸发创意！\n      ', x: 368.453125, y: 107.546875 },
+          { text: '\n赛题一：\n\n  玩转动画', x: 29.546875, y: 280.7734375 },
+          { text: '\n赛题二：\n\n  ToDoList', x: 195.0390625, y: 351.25 },
+        ],
+        openModal: () => {
+          const mask = document.createElement('div')
+          mask.classList.add('modal')
+          // 添加在body下
+          document.body.appendChild(mask)
+          mask.addEventListener('click', clickFunc)
+          const tip = document.createElement('div')
+          tip.innerHTML = '1. 可随意 <b>拖拽</b> 便签<br /><br />2. <b>长按便签</b> 编辑/删除<br /><br />3. 在空白处长按 <b>新建便签</b><br /><br />4. 浏览器本地自动保存'
+          mask.appendChild(tip)
+          function clickFunc() {
+            document.body.removeChild(this)
+            mask.removeEventListener('click', clickFunc)
+          }
+        },
+      }
+      // Vue3:
+      const { createApp } = Vue
+      let timer = null
+      let isTouching = false // 标记是否正在移动
+      let initial = {}
+      let lock = false
+
+      let cloneList = null
+      let currentId = null
+
+      createApp({
+        data() {
+          return {
+            listData: JSON.parse(localStorage.getItem('_todoList')) || todoExtra.initData,
+            editIndex: -1,
+          }
+        },
+        mounted() {
+          const pointCircle = document.getElementById('point_circle')
+          // 操作事件
+          window.addEventListener('pointerdown', (e) => {
+            if (lock) {
+              if (!e.target.getAttribute('contenteditable')) {
+                setTimeout(() => {
+                  this.editIndex = -1
+                }, 100)
+                lock = false
+              }
+              return
+            }
+            e.preventDefault()
+            initial = { offsetX: e.offsetX, offsetY: e.offsetY }
+            isTouching = true
+            e.target.id && (currentId = e.target.id)
+            timer = setTimeout(() => {
+              changeStyle(pointCircle, [`left: ${e.pageX - 4}px`, `top: ${e.pageY - 4}px`, 'display: block'])
+              if (e.target.id === '') {
+                // 点击空白，新建
+                timer = setTimeout(() => {
+                  this.listData.push({ x: e.pageX - 100, y: e.pageY, text: '' })
+                  cloneList = JSON.parse(JSON.stringify(this.listData))
+                }, 600)
+              } else {
+                timer = setTimeout(() => {
+                  cloneList = JSON.parse(JSON.stringify(this.listData))
+                  editText(e.target.firstChild)
+                  this.editIndex = +e.target.id
+                  lock = true
+                }, 600)
+              }
+            }, 150)
+          })
+          window.addEventListener('pointerup', (e) => {
+            isTouching = false
+            clearTimeout(timer)
+            changeStyle(pointCircle, ['display: none'])
+          })
+          window.addEventListener('pointermove', (e) => {
+            e.preventDefault()
+            if (isTouching && currentId) {
+              clearTimeout(timer)
+              changeStyle(pointCircle, ['display: none'])
+              this.listData[currentId] = { ...this.listData[currentId], ...{ x: e.pageX - initial.offsetX, y: e.pageY - initial.offsetY } }
+            }
+          })
+
+          const observer = new MutationObserver(
+            debounce((mutationRecords) => {
+              this.save()
+            })
+          )
+          // 观察 id=page 的标签变动
+          observer.observe(page, {
+            childList: true, // 观察直接子节点
+            subtree: true, // 及其更低的后代节点
+            characterData: true,
+            attributes: true, // 观察属性变化
+          })
+        },
+        methods: {
+          del(i) {
+            cloneList.splice(i, 1)
+            this.listData = cloneList
+          },
+          changeText(e, i) {
+            cloneList[i].text = e.target.innerHTML
+          },
+          writeDone() {
+            this.save()
+            this.listData = cloneList
+          },
+          save() {
+            if (cloneList) {
+              cloneList = cloneList.map((item, index) => {
+                const { x, y } = this.listData[index]
+                return { text: item.text, x, y }
+              })
+            }
+            localStorage.setItem('_todoList', JSON.stringify(cloneList || this.listData))
+          },
+          openTip() {
+            todoExtra.openModal()
+          },
+        },
+      }).mount('#app')
+
+      // 工具函数 - 自动聚焦选择编辑文本
+      function editText(el) {
+        setTimeout(() => {
+          el.focus()
+          if (document.selection) {
+            const range = document.body.createTextRange()
+            range.moveToElementText(el)
+            range.select()
+          } else if (window.getSelection) {
+            const range = document.createRange()
+            range.selectNodeContents(el)
+            window.getSelection().removeAllRanges()
+            window.getSelection().addRange(range)
+          }
+        }, 10)
+      }
+
+      // 工具函数 - 直接修改样式，减少回流重绘
+      function changeStyle(el, arr) {
+        const original = el.style.cssText.split(';')
+        original.pop()
+        el.style.cssText = original.concat(arr).join(';') + ';'
+      }
+
+      // 工具函数 - 防抖
+      function debounce(fn, delay = 300) {
+        let timer = null
+        return function () {
+          if (timer) {
+            clearTimeout(timer)
+          }
+          timer = setTimeout(() => {
+            fn.call(this, ...arguments)
+            timer = null
+          }, delay)
+        }
+      }
+    </script>
+  </body>
+</html>
