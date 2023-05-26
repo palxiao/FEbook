@@ -10,6 +10,8 @@
 
 ### About me
 
+![github](https://img.shields.io/github/followers/palxiao?style=social)
+
 阿里云[专家博主](https://book.palxp.com/images/2023-1-19-1674125144070.jpeg)、稀土掘金[优秀创作者](https://juejin.cn/user/2682464103060541/posts)、蓝桥杯Web赛题签约作者，多年一线前端研发经验。热爱技术分享与写作，欢迎访问 [我的技术博客](https://blog.palxp.com/)，目前也比较活跃在掘金社区，欢迎与我交流😁
 
 茶无味的一天是比喻日常生活过于平淡，单调且缺乏活力，没有新鲜感和激情，就像喝了没味道的清水一样。
