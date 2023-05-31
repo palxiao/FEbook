@@ -1,33 +1,45 @@
 
-> 本文档基于 Docsify 驱动，部署在 GithubPages，基于 [Vue + Electron](https://juejin.cn/post/7127593631606636581) 提供编辑器。
-
 ### Hello
 
-> 很高兴见到你，这里是**茶无味**。
->
-> 目前专注web前端领域的技术文章创作，也希望能在学习与分享的道路上做一点微小的贡献。
+> 很高兴见到你，这里是**茶无味**🍻
 > 
-> 欢迎关注我的公众号：【**品味前端**】，一起做有品位的前端开发。
+> 目前专注于前端干货分享，欢迎关注我的公众号：【**品味前端**】
 >
 
 <img src="/wechat.png" width = "70%" />
 
 ### About me
 
-去年(2021)在[**掘金社区**](https://juejin.cn/user/2682464103060541/posts)写文时，活动经常送马克杯，我也就开始习惯天天泡茶喝(车仔茶包)，每天喝到茶没味道的时候，也就意识到差不多快下班，一天就要结束了。再加上当时看到个表情包，配图文字是：*一杯茶 一包烟 一个接口对一天*，顿时就觉得很应景，于是出于戏谑当时的我，就起了「**茶无味的一天**」这个名。
+![followers](https://img.shields.io/github/followers/palxiao?style=social) ![stars](https://img.shields.io/github/stars/palxiao?style=social) ![jj](https://img.shields.io/static/v1?label=掘金%20follower&message=1050&color=informational)
 
-<img src="/images/0.9214494194923779.jpg" width="25%" />
+阿里云[专家博主](https://book.palxp.com/images/2023-1-19-1674125144070.jpeg)、稀土掘金[Lv5创作者](https://juejin.cn/user/2682464103060541/posts)、蓝桥杯Web赛题签约作者，多年一线前端研发经验。热爱技术分享与写作，欢迎访问 [我的技术博客](https://blog.palxp.com/)，目前也比较活跃在掘金社区，欢迎与我交流😁
 
-如果你乐于和我交流，可以叫我小天，或者随你喜欢都可以😁🍻
+茶无味的一天是比喻日常生活过于平淡，单调且缺乏活力，没有新鲜感和激情，就像喝了没味道的清水一样。
+
+为了让生活更有意义和创造感，我们可以通过学习新的知识和技能，尝试新的事物和经历，结交新的朋友和社交圈子，开阔眼界和思维，享受生命中的美好事物，从而让我们的日常生活更加丰富多彩，充满激情和活力。
+
+> 茶无味的小事记：
+> 
+> **2023.02** | [兔兔创意投稿大赛](https://juejin.cn/post/7202135679227969596#heading-0) - 最佳创意奖第二名
+> 
+>**2023.01** | 入选掘金官方 [2022年度影响力榜单](https://juejin.cn/post/7187334670286061626#heading-5)，获「[年度爆款好文奖](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c8c4007aaf3a4c31a68700bee7633761~tplv-k3u1fbpfcp-watermark.image?)」
+>
+>**2022.12** | 码上掘金迎新年[编程挑战赛](https://juejin.cn/challenge/2/result)二等奖
+>
+>**2022.09** | 稀土掘金-倔力计划[月榜作者](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/56101c9d25194e0081d5695cc1b6e391~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)、创作等级达到 Lv5
+>
+>**2022.08** | 稀土掘金-创作者训练营[优秀学员](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4a6bb5593e974727b50d19ae841dff38~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
+>
+>**2022.06** | 《[我用三个月时间仿造了一个稿定设计](https://juejin.cn/post/7113919111905673247)》2022年中总结
+>
 
 ### Hobby
 
-兴趣爱好挺宅的，音乐动漫板绘等等，特别爱玩游戏，基本什么都玩，学编程的初衷就是为了**做游戏**，因为要学的东西很多，所以目前web前端才是主职，但梦想还是要有的，路漫漫其修远兮。
+热爱程序和代码，喜欢摄影音乐动漫板绘等等，游戏和编程就如同诗人的酒与故事！
 
-喜欢的游戏：**仙剑奇侠传**、**尼尔机械纪元**、**最终幻想系列**
-喜欢的动漫：**灵笼**、**朝花夕誓**、**言叶之庭**、**声之形**、**狼孩子雨和雪**
-最近在玩：**原神**、**奇异人生**
-最近在看：**赛博朋克边缘行者**
+-----
 
-> <div style="font-size:12px;color:#888888"><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>，<span id="busuanzi_container_site_pv">共有<span id="busuanzi_value_site_uv"></span>人在此留下足迹。</span></div>
+> 本文档使用 [Vue + Electron](https://juejin.cn/post/7127593631606636581) 编辑，基于 [Docsify](https://docsify.js.org/#/zh-cn/) 驱动，部署在 GithubPages。
+
+<div style="font-size:12px;color:#888888"><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>，<span id="busuanzi_container_site_pv">共有<span id="busuanzi_value_site_uv"></span>位小伙伴在此留下足迹。</span> <a href="https://support.qq.com/product/496599">公共留言板</a></div>
 

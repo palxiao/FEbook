@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .item {
+      display: block;
+      width: 240px;
+      margin: 8px 0;
+      cursor: pointer;
+    }
+
+    /* 图片预览 */
+    .modal {
+      touch-action: none;
+      position: fixed;
+      z-index: 99;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.75);
+      user-select: none;
+    }
+    .modal > img {
+      position: absolute;
+      padding: 0;
+      margin: 0;
+      /* transition: all var(--delay_time); */
+      transform: translateZ(0);
+    }
+  </style>
+  <body>
+    <div id="list" style="padding: 0 10px">
+      <img class="item" src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8dGVjaHxlbnwwfHx8fDE2NjIwMjc1MzI&ixlib=rb-1.2.1&q=80&w=500" />
+      <img class="item" src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8NHx8Y2F0fGVufDB8fHx8MTY2MjAyNzg3Nw&ixlib=rb-1.2.1&q=80&w=500" />
+      <img class="item" src="https://images.unsplash.com/photo-1561948955-570b270e7c36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8OHx8Y2F0fGVufDB8fHx8MTY2MjAyNzg3Nw&ixlib=rb-1.2.1&q=80&w=500" />
+      <img class="item" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8dGVjaHxlbnwwfHx8fDE2NjIwMjc1MzI&ixlib=rb-1.2.1&q=80&w=500" />
+      <img class="item" src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8Nnx8dGVjaHxlbnwwfHx8fDE2NjIwMjc1MzI&ixlib=rb-1.2.1&q=80&w=500" />
+    </div>
+  </body>
+  <script>
+    let scale = 1
+    let offset = { left: 0, top: 0 }
+    let origin = 'center'
+    let initialData = { offset: {}, origin: 'center', scale: 1 }
+    let startPoint = { x: 0, y: 0 } // 记录初始触摸点位
+    let isTouching = false // 标记是否正在移动
+    let isMove = false // 正在移动中，与点击做区别
+    let touches = new Map() // 触摸点数组
+    let lastDistance = 0
+    let lastScale = 1 // 记录下最后的缩放值
+    let scaleOrigin = { x: 0, y: 0 }
+
+    // 惯性拖动记录值
+    let last = null
+    let diff = null
+    let rafUnit = null
+
+    const { innerWidth: winWidth, innerHeight: winHeight } = window
+    let cloneEl = null
+    let originalEl = null
+
+    document.getElementById('list').addEventListener('click', function (e) {
+      e.preventDefault()
+      if (e.target.classList.contains('item')) {
+        originalEl = e.target
+        cloneEl = originalEl.cloneNode(true)
+        originalEl.style.opacity = 0
+        openPreview()
+      }
+    })
+
+    function openPreview() {
+      scale = 1
+      const { offsetWidth, offsetHeight } = originalEl
+      const { top, left } = originalEl.getBoundingClientRect()
+      // 创建蒙层
+      const mask = document.createElement('div')
+      mask.classList.add('modal')
+      // 添加在body下
+      document.body.appendChild(mask)
+      // 注册事件
+      mask.addEventListener('click', clickFunc)
+      mask.addEventListener('mousewheel', zoom, { passive: false })
+      // 遮罩点击事件
+      function clickFunc() {
+        setTimeout(() => {
+          if (isMove) {
+            isMove = false
+          } else {
+            changeStyle(cloneEl, ['transition: all .3s', `left: ${left}px`, `top: ${top}px`, `transform: translate(0,0)`, `width: ${offsetWidth}px`])
+            setTimeout(() => {
+              document.body.removeChild(this)
+              originalEl.style.opacity = 1
+              mask.removeEventListener('click', clickFunc)
+            }, 300)
+          }
+        }, 280)
+      }
+      // 添加图片
+      changeStyle(cloneEl, [`left: ${left}px`, `top: ${top}px`])
+      mask.appendChild(cloneEl)
+      // 移动图片到屏幕中心位置
+      const originalCenterPoint = { x: offsetWidth / 2 + left, y: offsetHeight / 2 + top }
+      const winCenterPoint = { x: winWidth / 2, y: winHeight / 2 }
+      const offsetDistance = { left: winCenterPoint.x - originalCenterPoint.x + left, top: winCenterPoint.y - originalCenterPoint.y + top }
+      const diffs = { left: ((adaptScale() - 1) * offsetWidth) / 2, top: ((adaptScale() - 1) * offsetHeight) / 2 }
+      changeStyle(cloneEl, ['transition: all 0.3s', `width: ${offsetWidth * adaptScale() + 'px'}`, `transform: translate(${offsetDistance.left - left - diffs.left}px, ${offsetDistance.top - top - diffs.top}px)`])
+      // 消除偏差
+      setTimeout(() => {
+        changeStyle(cloneEl, ['transition: all 0s', `left: 0`, `top: 0`, `transform: translate(${offsetDistance.left - diffs.left}px, ${offsetDistance.top - diffs.top}px)`])
+        offset = { left: offsetDistance.left - diffs.left, top: offsetDistance.top - diffs.top } // 记录值
+        record()
+      }, 300)
+    }
+
+    // 滚轮缩放
+    const zoom = (event) => {
+      if (!event.deltaY) {
+        return
+      }
+      event.preventDefault()
+      origin = `${event.offsetX}px ${event.offsetY}px`
+      // 缩放执行
+      if (event.deltaY < 0) {
+        scale += 0.1 // 放大
+      } else if (event.deltaY > 0) {
+        scale >= 0.2 && (scale -= 0.1) // 缩小
+      }
+      if (scale < initialData.scale) {
+        reduction()
+      }
+      offset = getOffsetCorrection(event.offsetX, event.offsetY)
+      changeStyle(cloneEl, ['transition: all .15s', `transform-origin: ${origin}`, `transform: translate(${offset.left + 'px'}, ${offset.top + 'px'}) scale(${scale})`])
+    }
+
+    // 获取中心改变的偏差
+    function getOffsetCorrection(x = 0, y = 0) {
+      const touchArr = Array.from(touches)
+      if (touchArr.length === 2) {
+        const start = touchArr[0][1]
+        const end = touchArr[1][1]
+        x = (start.offsetX + end.offsetX) / 2
+        y = (start.offsetY + end.offsetY) / 2
+      }
+      origin = `${x}px ${y}px`
+      const offsetLeft = (scale - 1) * (x - scaleOrigin.x) + offset.left
+      const offsetTop = (scale - 1) * (y - scaleOrigin.y) + offset.top
+      scaleOrigin = { x, y }
+      return { left: offsetLeft, top: offsetTop }
+    }
+
+    // 操作事件
+    window.addEventListener('pointerdown', function (e) {
+      e.preventDefault()
+      touches.set(e.pointerId, e) // TODO: 点击存入触摸点
+      isTouching = true
+      startPoint = { x: e.clientX, y: e.clientY }
+      if (touches.size === 2) {
+        // TODO: 判断双指触摸，并立即记录初始数据
+        lastDistance = getDistance()
+        lastScale = scale
+      }
+      // TODO: 处理惯性拖动初始
+      cancelAnimationFrame(rafUnit)
+      last = { x: e.clientX, y: e.clientY }
+      diff = { x: 0, y: 0 }
+    })
+    window.addEventListener('pointerup', function (e) {
+      touches.delete(e.pointerId) // TODO: 抬起移除触摸点
+      if (touches.size <= 0) {
+        isTouching = false
+        raf()
+      } else {
+        const touchArr = Array.from(touches)
+        // 更新点位
+        startPoint = { x: touchArr[0][1].clientX, y: touchArr[0][1].clientY }
+      }
+      setTimeout(() => {
+        isMove = false
+      }, 300)
+    })
+    window.addEventListener('pointermove', (e) => {
+      e.preventDefault()
+      if (isTouching) {
+        isMove = true
+        if (touches.size < 2) {
+          // 单指滑动
+          offset = {
+            left: offset.left + (e.clientX - startPoint.x),
+            top: offset.top + (e.clientY - startPoint.y),
+          }
+          changeStyle(cloneEl, ['transition: all 0s', `transform: translate(${offset.left + 'px'}, ${offset.top + 'px'}) scale(${scale})`, `transform-origin: ${origin}`])
+          // 更新点位
+          startPoint = { x: e.clientX, y: e.clientY }
+        } else {
+          // 双指缩放
+          touches.set(e.pointerId, e)
+          const ratio = getDistance() / lastDistance
+          scale = ratio * lastScale
+          offset = getOffsetCorrection()
+          if (scale < initialData.scale) {
+            reduction()
+          }
+          changeStyle(cloneEl, ['transition: all 0s', `transform: translate(${offset.left + 'px'}, ${offset.top + 'px'}) scale(${scale})`, `transform-origin: ${origin}`])
+        }
+        // TODO: 更新惯性拖动数据
+        diff = { x: e.clientX - last.x, y: e.clientY - last.y }
+        last = { x: e.clientX, y: e.clientY }
+      }
+    })
+    window.addEventListener('pointercancel', function (e) {
+      touches.clear() // 可能存在特定事件导致中断，真机操作时 pointerup 在某些边界情况下不会生效，所以需要清空
+    })
+
+    // 修改样式，减少回流重绘
+    function changeStyle(el, arr) {
+      const original = el.style.cssText.split(';')
+      original.pop()
+      el.style.cssText = original.concat(arr).join(';') + ';'
+    }
+
+    // 计算自适应屏幕的缩放值
+    function adaptScale() {
+      const { offsetWidth: w, offsetHeight: h } = originalEl
+      let scale = 0
+      scale = winWidth / w
+      if (h * scale > winHeight - 80) {
+        scale = (winHeight - 80) / h
+      }
+      return scale
+    }
+
+    // 获取距离
+    function getDistance() {
+      const touchArr = Array.from(touches)
+      if (touchArr.length < 2) {
+        return 0
+      }
+      const start = touchArr[0][1]
+      const end = touchArr[1][1]
+      return Math.hypot(end.x - start.x, end.y - start.y)
+    }
+
+    // 记录初始化数据
+    function record() {
+      initialData = Object.assign({}, { offset, origin, scale })
+    }
+
+    // 还原记录，用于边界处理
+    let timer = null
+    function reduction() {
+      timer && clearTimeout(timer)
+      timer = setTimeout(() => {
+        offset = initialData.offset
+        origin = initialData.origin
+        scale = initialData.scale
+        changeStyle(cloneEl, [`transform: translate(${offset.left + 'px'}, ${offset.top + 'px'}) scale(${scale})`, `transform-origin: ${origin}`])
+      }, 300)
+    }
+
+    // 增加惯性拖动
+    function raf() {
+      let { x, y } = diff
+      if(!x && !y) return
+      function step() {
+        x *= 0.95
+        y *= 0.95
+        offset.left += x * 1
+        offset.top += y * 1
+        changeStyle(cloneEl, ['transition: all 0s', `transform: translate(${offset.left + 'px'}, ${offset.top + 'px'}) scale(${scale})`, `transform-origin: ${origin}`])
+        if (Math.abs(x) > 1 || Math.abs(y) > 1) {
+          rafUnit = requestAnimationFrame(step)
+        }
+      }
+      rafUnit = requestAnimationFrame(step)
+    }
+  </script>
+</html>

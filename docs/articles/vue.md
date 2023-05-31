@@ -1,12 +1,3 @@
-<!--
- * @Author: ShawnPhang
- * @LastEditors: ShawnPhang
- * @Description: 
- * @Date: 2021-07-26 15:09:45
- * @LastEditTime: 2022-04-14 14:33:27
- * @site: book.palxp.com / blog.palxp.com
--->
-
 ## Vue 小知识
 
 ### 深度选择器
@@ -106,6 +97,56 @@ event：input -> update:modelValue
 
 在vue2中一般使用`require('@/assets/xxx.png')`来引用图片，在vue3中由于配套工具不支持require，故可以用`await import('@/assets/xxx.png)`来引用图片或资源。
 
-### 其他异同
+### Vue3 差异
 
-Vue3 中已废弃 filter（过滤器）
+**Global API**
+
+全局 Vue API 已更改为使用应用程序实例
+全局和内部 API 已经被重构为可 tree-shakable
+
+**模板指令**
+
+组件上 v-model 用法已更改
+`<template v-for>` 和 非 `v-for` 节点上 key 用法已更改
+在同一元素上使用的 `v-if` 和 `v-for` 优先级已更改
+`v-bind="object"` 现在排序敏感
+`v-for` 中的 `ref` 不再注册 `ref` 数组
+    
+**组件**
+    
+只能使用普通函数创建功能组件
+functional 属性在单文件组件 (SFC)
+异步组件现在需要 defineAsyncComponent 方法来创建
+
+**渲染函数**
+    
+渲染函数API改变
+`$scopedSlots property` 已删除，所有插槽都通过 `$slots` 作为函数暴露
+自定义指令 API 已更改为与组件生命周期一致
+一些转换 class 被重命名了：
+`v-enter` -> `v-enter-from`
+`v-leave` -> `v-leave-from`
+组件 watch 选项和实例方法 $watch 不再支持点分隔字符串路径，请改用计算函数作为参数
+在 Vue 2.x 中，应用根容器的 outerHTML 将替换为根组件模板 (如果根组件没有模板/渲染选项，则最终编译为模板)。VUE3.x 现在使用应用程序容器的 innerHTML。
+
+**其他**
+
+destroyed 生命周期选项被重命名为 unmounted
+beforeDestroy 生命周期选项被重命名为 beforeUnmount
+工厂函数不再有权访问 this 上下文
+自定义指令 API 已更改为与组件生命周期一致
+data 应始终声明为函数
+来自 mixin 的 data 选项现在可简单地合并
+attribute 强制策略已更改
+一些过渡 class 被重命名
+组建 watch 选项和实例方法 $watch不再支持以点分隔的字符串路径。请改用计算属性函数作为参数。
+`<template>` 没有特殊指令的标记 (v-if/else-if/else、v-for 或 v-slot) 现在被视为普通元素，并将生成原生的 `<template>` 元素，而不是渲染其内部内容。
+在 Vue 2.x 中，应用根容器的 outerHTML 将替换为根组件模板 (如果根组件没有模板/渲染选项，则最终编译为模板)。Vue 3.x 现在使用应用容器的 innerHTML，这意味着容器本身不再被视为模板的一部分。
+    
+**移除的 API**
+
+keyCode 支持作为 `v-on` 的修饰符
+$on，$off 和 $once 实例方法
+过滤器 filter
+内联模板 attribute
+$destroy 实例方法。用户不应再手动管理单个 Vue 组件的生命周期。

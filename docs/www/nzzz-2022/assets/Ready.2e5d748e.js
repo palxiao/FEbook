@@ -1,0 +1,1 @@
+import{g as o,h as e,c as n,u as t,o as c,r as s}from"./vendor.36cce008.js";const r=o({setup(){const o=t();e((()=>{window.addEventListener("scroll",(function(){const e=document.documentElement.scrollTop||window.pageYOffset||document.body.scrollTop;o.commit("changeScroll",e)}))}))}});r.render=function(o,e,t,r,a,d){const l=s("router-view");return c(),n(l)};export{r as default};

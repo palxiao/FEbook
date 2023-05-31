@@ -1,11 +1,3 @@
-<!--
- * @Author: ShawnPhang
- * @LastEditors: ShawnPhang
- * @Description: 
- * @Date: 2021-07-22 17:50:16
- * @LastEditTime: 2022-07-28 22:32:02
- * @site: book.palxp.com / blog.palxp.com
--->
 
 ### vue-cli-plugin-norm
 
@@ -32,3 +24,5 @@ vue add vue-cli-plugin-norm
 提交功能预览: 
 
 ![](../images/c.png)
+
+> 测试时 Vue 最高版本为 3.0 beta 与 vite 2.x

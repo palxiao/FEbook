@@ -1,11 +1,4 @@
-<!--
- * @Author: ShawnPhang
- * @LastEditors: ShawnPhang
- * @Description: 
- * @Date: 2021-07-22 16:44:55
- * @LastEditTime: 2021-07-27 10:03:21
- * @site: book.palxp.com / blog.palxp.com
--->
+> 太久没维护了不建议使用，vite还是引用的2.x版本，官方推荐模板列表指引: [点击此处](https://github.com/vitejs/awesome-vite#templates)。
 
 ### tsn-cli
 
