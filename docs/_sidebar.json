@@ -114,6 +114,17 @@
     ]
   },
   {
+    "id": "M3JbpW3LPbbW_qBdIgBQq",
+    "label": "人工智能",
+    "children": [
+      {
+        "id": "funR9FfwPG9olPS4sxQnA",
+        "label": "图灵到底灵不灵",
+        "children": []
+      }
+    ]
+  },
+  {
     "id": "A1ScQNha6MVraIKQUBX-e",
     "label": "面试进阶",
     "children": [
