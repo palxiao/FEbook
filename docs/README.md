@@ -10,9 +10,9 @@
 
 ### About me
 
-![followers](https://img.shields.io/github/followers/palxiao?style=social) ![stars](https://img.shields.io/github/stars/palxiao?style=social) ![jj](https://img.shields.io/static/v1?label=掘金%20follower&message=1050&color=informational)
+![followers](https://img.shields.io/github/followers/palxiao?style=social) ![stars](https://img.shields.io/github/stars/palxiao?style=social) ![jj](https://img.shields.io/static/v1?label=掘金%20follower&message=1132&color=informational)
 
-阿里云[专家博主](https://book.palxp.com/images/2023-1-19-1674125144070.jpeg)、稀土掘金[Lv5创作者](https://juejin.cn/user/2682464103060541/posts)、蓝桥杯Web赛题签约作者，多年一线前端研发经验。热爱技术分享与写作，欢迎访问 [我的技术博客](https://blog.palxp.com/)，目前也比较活跃在掘金社区，欢迎与我交流😁
+阿里云[专家博主](https://book.palxp.com/images/2023-1-19-1674125144070.jpeg)、稀土掘金[Lv5创作者](https://juejin.cn/user/2682464103060541/posts)、蓝桥杯Web赛题签约作者，多年一线前端研发经验。热爱技术分享与写作，欢迎访问 [我的技术博客](https://blog.palxp.com/)，目前也比较活跃在掘金社区，欢迎与我交流😁个人微信：palxiao
 
 茶无味的一天是比喻日常过于平淡，单调且缺乏活力，没有新鲜感和激情，就像喝了没味道的茶水一样。
 
