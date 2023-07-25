@@ -4,19 +4,19 @@
 > 很高兴见到你，这里是**茶无味**🍻，欢迎关注我的公众号：
 >
 
-<img src="/wechat.png" width = "65%" />
+<img src="/wechat.png" width = "50%" />
 
 ### About me
 
-![followers](https://img.shields.io/github/followers/palxiao?style=social) ![stars](https://img.shields.io/github/stars/palxiao?style=social) ![jj](https://img.shields.io/static/v1?label=掘金%20follower&message=1132&color=informational)
-
-阿里云[专家博主](https://pic.imgdb.cn/item/64bde5221ddac507cc3e78b4.jpg)、稀土掘金[Lv5创作者](https://juejin.cn/user/2682464103060541/posts)，多年一线前端研发经验。热爱技术分享与写作，欢迎访问 [我的技术博客](https://blog.palxp.com/)，目前比较活跃在掘金社区，欢迎与我交流😁 个人微信：palxiao
+阿里云[专家博主](https://pic.imgdb.cn/item/64bde5221ddac507cc3e78b4.jpg)、稀土掘金[Lv5创作者](https://juejin.cn/user/2682464103060541/posts)，多年一线前端研发经验。热爱技术分享与写作，欢迎访问 [我的技术博客](https://blog.palxp.com/)，目前比较活跃在掘金社区，欢迎与我交流😁 ( 个人微信：palxiao )
 
 ------
 
 茶无味的一天是比喻日常过于平淡，单调且缺乏活力，没有新鲜感和激情，就像喝了没味道的茶水一样。
 
 为了让生活更有意义和创造感，我们可以通过学习新的知识和技能，尝试新的事物和经历，不断开阔眼界和思维，享受生命中的美好事物，从而充满激情和活力。
+
+![followers](https://img.shields.io/github/followers/palxiao?style=social) ![stars](https://img.shields.io/github/stars/palxiao?style=social) ![jj](https://img.shields.io/static/v1?label=掘金%20follower&message=1132&color=informational)
 
 > 茶无味的小事记：
 > 
