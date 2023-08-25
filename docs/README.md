@@ -18,7 +18,7 @@
 
 ![followers](https://img.shields.io/github/followers/palxiao?style=social) ![stars](https://img.shields.io/github/stars/palxiao?style=social)
 
-![jj](https://xfbrzhf1gs.us.aircode.run/juejin?uid=2682464103060541&hide_border=true&theme=vue)
+![jj](https://xfbrzhf1gs.us.aircode.run/juejin?uid=2682464103060541&theme=vue)
 
 
 > 茶无味的稀土掘金小事记：
