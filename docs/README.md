@@ -16,7 +16,7 @@
 
 为了让生活更有意义和创造感，我们可以通过学习新的知识和技能，尝试新的事物和经历，不断开阔眼界和思维，享受生命中的美好事物，从而充满激情和活力。
 
-![followers](https://img.shields.io/github/followers/palxiao?style=social) ![stars](https://img.shields.io/github/stars/palxiao?style=social) ![jj](https://img.shields.io/static/v1?label=掘金%20follower&message=1132&color=informational)
+![followers](https://img.shields.io/github/followers/palxiao?style=social) ![stars](https://img.shields.io/github/stars/palxiao?style=social)
 
 ![jj](https://xfbrzhf1gs.us.aircode.run/juejin?uid=2682464103060541&hide_border=true&theme=vue)
 
