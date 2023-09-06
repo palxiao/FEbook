@@ -17,7 +17,7 @@
 
 > 茶无味の小事记：
 > 
-> **2023.02** | 
+> **2023.07** | [迅排设计正式开源](https://juejin.cn/post/7261774602481188923)，开源地址：[palxiao/poster-design](https://github.com/palxiao/poster-design)
 > 
 >**2023.01** | [稀土掘金2022年度影响力榜单](https://juejin.cn/post/7187334670286061626#heading-5) -「年度爆款好文奖」
 >
