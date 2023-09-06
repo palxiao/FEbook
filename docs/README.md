@@ -29,12 +29,6 @@
 > 
 >**2023.01** | 入选掘金官方 [2022年度影响力榜单](https://juejin.cn/post/7187334670286061626#heading-5)，获「[年度爆款好文奖](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c8c4007aaf3a4c31a68700bee7633761~tplv-k3u1fbpfcp-watermark.image?)」
 >
->**2022.12** | 码上掘金迎新年[编程挑战赛](https://juejin.cn/challenge/2/result)二等奖
->
->**2022.09** | 稀土掘金-倔力计划[月榜作者](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/56101c9d25194e0081d5695cc1b6e391~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)、创作等级达到 Lv5
->
->**2022.08** | 稀土掘金-创作者训练营[优秀学员](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4a6bb5593e974727b50d19ae841dff38~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
->
 >**2022.06** | 《[我用三个月时间仿造了一个稿定设计](https://juejin.cn/post/7113919111905673247)》2022年中总结
 >
 
