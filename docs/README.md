@@ -38,7 +38,7 @@
 
 -----
 
-> 本文档使用 [Vue + Electron](https://juejin.cn/post/7127593631606636581) 编辑，基于 [Docsify](https://docsify.js.org/#/zh-cn/) 驱动，部署在 GithubPages。
+> 本文档使用 [Vue + Electron](https://juejin.cn/post/7127593631606636581) 编辑发布，基于 [Docsify](https://docsify.js.org/#/zh-cn/) 驱动，部署在 [GithubPages](https://pages.github.com/)
 
 <div style="font-size:12px;color:#888888"><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>，<span id="busuanzi_container_site_pv">共有<span id="busuanzi_value_site_uv"></span>位小伙伴在此留下足迹。</span> <a href="https://support.qq.com/product/496599">公共留言板</a></div>
 
