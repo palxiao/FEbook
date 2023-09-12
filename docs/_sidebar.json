@@ -158,7 +158,8 @@
         "id": "8SZ_RnONu8sSSoQDUTZ-X",
         "label": "新建删除测试",
         "children": [],
-        "link": "articles/1694510322734.md"
+        "link": "articles/1694510322734.md",
+        "hide": true
       }
     ]
   },
