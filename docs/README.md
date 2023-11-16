@@ -8,7 +8,7 @@
 
 ### About me
 
-阿里云[专家博主](https://pic.imgdb.cn/item/64bde5221ddac507cc3e78b4.jpg)、稀土掘金[Lv5创作者](https://juejin.cn/user/2682464103060541/posts)，多年前端研发经验，热爱技术分享与写作，欢迎与我交流😁 ( 个人微信：palxiao )
+阿里云[专家博主](https://pic.imgdb.cn/item/64bde5221ddac507cc3e78b4.jpg)、稀土掘金[Lv5创作者](https://juejin.cn/user/2682464103060541/posts)，多年前端研发经验，热爱技术分享与写作，欢迎与我交流😁 ( 个人微信：palxiao，请注明来意哦~ )
 
 ![followers](https://img.shields.io/github/followers/palxiao?style=social) ![stars](https://img.shields.io/github/stars/palxiao?style=social)
 
