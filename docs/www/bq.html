@@ -3,7 +3,7 @@
  * @Date: 2023-05-13 17:57:51
  * @Description: 思维便签 Vue3
  * @LastEditors: ShawnPhang <https://m.palxp.cn>
- * @LastEditTime: 2024-01-03 10:55:44
+ * @LastEditTime: 2024-01-03 11:13:26
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -472,12 +472,21 @@
               });
               const element = document.createElement('a');
               element.href = URL.createObjectURL(blob)
-              element.download = 'note.json';
+              element.download = `note_${getNowFormatDate()}.json`;
               const a = document.body.appendChild(element);
               const evt = new MouseEvent('click')
               a.dispatchEvent(evt);
               document.body.removeChild(element);
           }
+      }
+
+      // 工具函数 - 获得日期
+      function getNowFormatDate() {
+          const date = new Date();
+          const year = date.getFullYear();
+          const month = date.getMonth() + 1;
+          const strDate = date.getDate();
+          return year + '-' + month.toString().padStart(2, '0') + '-' + strDate.toString().padStart(2, '0')
       }
     </script>
   </body>
