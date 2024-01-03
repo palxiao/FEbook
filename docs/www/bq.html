@@ -2,8 +2,8 @@
  * @Author: ShawnPhang
  * @Date: 2023-05-13 17:57:51
  * @Description: 思维便签 Vue3
- * @LastEditors: ShawnPhang <site: book.palxp.com>
- * @LastEditTime: 2023-05-13 18:24:29
+ * @LastEditors: ShawnPhang <https://m.palxp.cn>
+ * @LastEditTime: 2024-01-03 10:55:44
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -16,6 +16,22 @@
       @import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
     </style>
     <style>
+      /* 菜单样式 */
+      .my_menu {
+        background-color: #ffffff;
+        box-shadow: 1px 0px 10px 3px rgba(0, 0, 0, 0.1);
+        padding: 5px;
+        position: absolute;
+        width: 120px;
+      }
+      .my_menu_bth {
+        padding: 4px 12px;
+        font-size: 14px;
+        color: #444444;
+      }
+      .my_menu_bth:hover {
+        background-color: #e5e7eb;
+      }
          /* CSS 圆环样式 */
       .circle_process {
         position: absolute;
@@ -180,10 +196,12 @@
   <body>
     <div id="app" style="--juejin-brand-1-normal: #1e80ff">
       <div id="page">
-        <div v-for="(item, i) in listData" :key="'p'+i" :id="i" :style="[{overflow: editIndex==i?'visible':'hidden'}, {left: item.x + 'px', top: item.y + 'px'}]" class="paper">
-          <div class="text" v-model="item.text" :style="{pointerEvents: editIndex==i?'all':'none'}" spellcheck="false" @input="changeText($event, i)" @blur="writeDone" contenteditable="plaintext-only">{{item.text}}</div>
-          <div v-show="editIndex==i" @click="del(i)" class="del"></div>
-        </div>
+        <template v-if="listData.length>0">
+          <div v-for="(item, i) in listData" :key="'p'+i" :id="i" :style="[{overflow: editIndex==i?'visible':'hidden'}, {left: item.x + 'px', top: item.y + 'px'}]" class="paper">
+            <div class="text" v-model="item.text" :style="{pointerEvents: editIndex==i?'all':'none'}" spellcheck="false" @input="changeText($event, i)" @blur="writeDone" contenteditable="plaintext-only">{{item.text}}</div>
+            <div v-show="editIndex==i" @click="del(i)" class="del"></div>
+          </div>
+        </template>
         <button class="help" @click="openTip"><img src="https://pic2.imgdb.cn/item/64573ff40d2dde57770ea83b.png" /> 查看帮助</button>
       </div>
       <!-- 圆圈进度 -->
@@ -195,17 +213,17 @@
           <div class="circle leftcircle"></div>
         </div>
       </div>
+      <!-- 右键菜单 -->
+      <div v-show="menuVisiable" :style="styleObj" class="my_menu">
+        <div class="my_menu_bth" @click.stop="handleMenu(m.type)" v-for="(m, mi) in menu.list" :key="'m'+mi">{{m.text}}</div>
+      </div>
+      <!-- 文件上传 -->
+      <input id="file" type="file" @change="selectJSON" accept=".json" style="display:none" />
     </div>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://npm.onmicrosoft.cn/vue@3/dist/vue.global.js"></script>
     <script>
       const todoExtra = {
-        initData: [
-          { text: '输入字数在40个字之内', x: 65.90625, y: 53.0078125 },
-          { text: '码上掘金是由\n稀土掘金推出\n的在线\ncode playground', x: 407.1640625, y: 342.015625 },
-          { text: '码上掘金编程比赛旨在为掘友们提供平台进行技术交流，挥洒灵感、迸发创意！\n      ', x: 368.453125, y: 107.546875 },
-          { text: '\n赛题一：\n\n  玩转动画', x: 29.546875, y: 280.7734375 },
-          { text: '\n赛题二：\n\n  ToDoList', x: 195.0390625, y: 351.25 },
-        ],
+        initData: [{"text":"\n\n输入限40字之内","x":137.05859375,"y":61.453125},{"text":"\n事情一：\n\n  整理大脑内存","x":31.16796875,"y":278.296875},{"text":"\n事情二：\n\n  着手眼前事物","x":227.03125,"y":363.765625}],
         openModal: () => {
           const mask = document.createElement('div')
           mask.classList.add('modal')
@@ -213,7 +231,7 @@
           document.body.appendChild(mask)
           mask.addEventListener('click', clickFunc)
           const tip = document.createElement('div')
-          tip.innerHTML = '1. 可随意 <b>拖拽</b> 便签<br /><br />2. <b>长按便签</b> 编辑/删除<br /><br />3. 在空白处长按 <b>新建便签</b><br /><br />4. 浏览器本地自动保存'
+          tip.innerHTML = '1. 可随意 <b>拖拽</b> 便签<br /><br />2. <b>长按便签</b> 编辑/删除<br /><br />3. 在空白处长按 <b>新建便签</b><br /><br />4. 自动保存在浏览器本地，支持导入导出<br /><br />5. 右键空白处打开菜单'
           mask.appendChild(tip)
           function clickFunc() {
             document.body.removeChild(this)
@@ -236,11 +254,39 @@
           return {
             listData: JSON.parse(localStorage.getItem('_todoList')) || todoExtra.initData,
             editIndex: -1,
+            menuVisiable: false,
+            menu: {
+              left: 0,
+              top: 0,
+              list: [{
+                  type: 'newOne',
+                  text: '新建',
+                },{
+                  type: 'importJSON',
+                  text: '导入数据',
+                },{
+                  type: 'exportJSON',
+                  text: '导出数据',
+                }]
+            }
           }
+        },
+        computed: {
+          styleObj() {
+            return {
+              left: this.menu.left + 'px',
+              top: this.menu.top + 'px',
+            }
+          },
         },
         mounted() {
           const pointCircle = document.getElementById('point_circle')
           // 操作事件
+          document.oncontextmenu = async (e) => {
+            e.stopPropagation()
+            e.preventDefault()
+            e.target.id === '' ? this.showMenu(e) : (this.menuVisiable = false)
+          }
           window.addEventListener('pointerdown', (e) => {
             if (lock) {
               if (!e.target.getAttribute('contenteditable')) {
@@ -281,6 +327,7 @@
           window.addEventListener('pointermove', (e) => {
             e.preventDefault()
             if (isTouching && currentId) {
+              this.menuVisiable = false
               clearTimeout(timer)
               changeStyle(pointCircle, ['display: none'])
               this.listData[currentId] = { ...this.listData[currentId], ...{ x: e.pageX - initial.offsetX, y: e.pageY - initial.offsetY } }
@@ -324,6 +371,57 @@
           openTip() {
             todoExtra.openModal()
           },
+          showMenu(e) {
+            let mx = e.pageX
+            let my = e.pageY
+            let listWidth = 120
+            if (mx + listWidth > window.innerWidth) {
+              mx -= listWidth
+            }
+            let listHeight = (14 + 10) * this.menu.list.length + 10
+            if (my + listHeight > window.innerHeight) {
+              my -= listHeight
+            }
+            this.menu.left = mx
+            this.menu.top = my
+            this.menuVisiable = true
+          },
+          handleMenu(fn) {
+            const fns = {
+              newOne: () => {
+                this.listData.push({ x: this.menu.left - 100, y: this.menu.top, text: '' })
+                cloneList = JSON.parse(JSON.stringify(this.listData))
+              },
+              importJSON: () => {
+                const fileLoader = document.getElementById('file');
+                fileLoader.click();
+              },
+              exportJSON: () => {
+                getDownloadUri(localStorage.getItem('_todoList') || todoExtra.initData+'')
+              }
+            }
+            fns[fn]()
+            this.menuVisiable = false
+          },
+          selectJSON(e) {
+            const file = e.target.files[0]
+            if (!file) {
+              return
+            }
+            // 使用 FileReader 来读取文件
+            let reader = new FileReader()
+            reader.readAsText(file, 'UTF-8')
+            reader.onload = (e) => {
+              let result = ''
+              try {
+                result = JSON.parse(e.target.result)
+              } catch (error) { }
+              if (result) {
+                this.listData = cloneList = result
+                localStorage.setItem('_todoList', JSON.stringify(cloneList))
+              }
+            }
+          }
         },
       }).mount('#app')
 
@@ -363,6 +461,23 @@
             timer = null
           }, delay)
         }
+      }
+
+      // 工具函数 - 下载文件
+      function getDownloadUri (data) {
+          const _utf = '\uFEFF'; // utf-8避免中文乱码
+          if (window.Blob && window.URL && window.URL.createObjectURL) {
+              const blob = new Blob([_utf + data], {
+                  type: 'text/json'
+              });
+              const element = document.createElement('a');
+              element.href = URL.createObjectURL(blob)
+              element.download = 'note.json';
+              const a = document.body.appendChild(element);
+              const evt = new MouseEvent('click')
+              a.dispatchEvent(evt);
+              document.body.removeChild(element);
+          }
       }
     </script>
   </body>
